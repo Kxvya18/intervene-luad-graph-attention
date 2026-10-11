@@ -1,0 +1,39 @@
+{
+ "seed": 20261011,
+ "rule": "random permutation of lineages with >=15 cells; add until >=20% of cells are sealed",
+ "sealed_lineages": [
+  "CNS/Brain",
+  "Head and Neck",
+  "Myeloid",
+  "Soft Tissue",
+  "Uterus"
+ ],
+ "sealed_cells": 204,
+ "dev_lineages": [
+  "Adrenal Gland",
+  "Ampulla of Vater",
+  "Biliary Tract",
+  "Bladder/Urinary Tract",
+  "Bone",
+  "Bowel",
+  "Breast",
+  "Cervix",
+  "Esophagus/Stomach",
+  "Eye",
+  "Fibroblast",
+  "Kidney",
+  "Liver",
+  "Lung",
+  "Lymphoid",
+  "Ovary/Fallopian Tube",
+  "Pancreas",
+  "Peripheral Nervous System",
+  "Pleura",
+  "Prostate",
+  "Skin",
+  "Testis",
+  "Thyroid",
+  "Vulva/Vagina"
+ ],
+ "dev_cells": 697
+}

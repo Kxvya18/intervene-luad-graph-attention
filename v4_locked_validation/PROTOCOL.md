@@ -73,4 +73,6 @@ results versus its baselines; S4 vs P13 head-to-head C-index per cohort.
 - H1 or H2 fails: report as a negative replication.
 
 ## Amendments
-(none)
+- A1 (2026-10-11, before any H1-H5 result was computed): in H1 the per-gene 'univariate Cox z-statistic' is computed as
+  the Cox partial-likelihood score-test z at beta = 0 (the log-rank form), which ranks genes identically in direction and
+  is fast enough for 5 x 50 nested folds. All other Cox models are full maximum-likelihood fits (lifelines).

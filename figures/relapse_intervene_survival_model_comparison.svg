@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="590.0" y="40.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202020">Relapse-INTERVENE survival validation in GSE31210 NSCLC</text>
+<text x="590.0" y="70.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#202020">Out-of-fold relapse-risk prediction; higher C-index means better relapse-free survival ranking</text>
+<line x1="92" y1="582.0" x2="1138" y2="582.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="587.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.58</text>
+<line x1="92" y1="493.6" x2="1138" y2="493.6" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="498.6" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.60</text>
+<line x1="92" y1="405.3" x2="1138" y2="405.3" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="410.3" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.62</text>
+<line x1="92" y1="316.9" x2="1138" y2="316.9" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="321.9" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.64</text>
+<line x1="92" y1="228.5" x2="1138" y2="228.5" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="233.5" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.66</text>
+<line x1="92" y1="140.2" x2="1138" y2="140.2" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80.0" y="145.2" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">0.68</text>
+<line x1="92" y1="96" x2="92" y2="582" stroke="#222" stroke-width="1.4"/>
+<line x1="92" y1="582" x2="1138" y2="582" stroke="#222" stroke-width="1.4"/>
+<text transform="rotate(-90 28 339.0)" x="28.0" y="339.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#202020">C-index</text>
+<rect x="127.9" y="208.3" width="77.7" height="373.7" fill="#4C6A92" opacity="0.88"/>
+<text x="166.7" y="198.3" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.665</text>
+<text x="166.7" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Raw transfer</text>
+<text x="166.7" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 3.73</text>
+<text x="166.7" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=1.1e-04</text>
+<rect x="277.3" y="374.9" width="77.7" height="207.1" fill="#8C8C8C" opacity="0.88"/>
+<line x1="316.1" y1="214.3" x2="316.1" y2="535.6" stroke="#111" stroke-width="1.5"/>
+<line x1="308.1" y1="214.3" x2="324.1" y2="214.3" stroke="#111" stroke-width="1.5"/>
+<line x1="308.1" y1="535.6" x2="324.1" y2="535.6" stroke="#111" stroke-width="1.5"/>
+<text x="316.1" y="364.9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.627</text>
+<text x="316.1" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Linear Cox</text>
+<text x="316.1" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 3.41</text>
+<text x="316.1" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=2.6e-04</text>
+<rect x="426.7" y="220.5" width="77.7" height="361.5" fill="#B65F5F" opacity="0.88"/>
+<line x1="465.6" y1="159.2" x2="465.6" y2="281.8" stroke="#111" stroke-width="1.5"/>
+<line x1="457.6" y1="159.2" x2="473.6" y2="159.2" stroke="#111" stroke-width="1.5"/>
+<line x1="457.6" y1="281.8" x2="473.6" y2="281.8" stroke="#111" stroke-width="1.5"/>
+<text x="465.6" y="210.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.662</text>
+<text x="465.6" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Interleaved</text>
+<text x="465.6" y="622.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">no prior</text>
+<text x="465.6" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 4.07</text>
+<text x="465.6" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=3.5e-05</text>
+<rect x="576.1" y="197.3" width="77.7" height="384.7" fill="#3B7A57" opacity="0.88"/>
+<line x1="615.0" y1="108.0" x2="615.0" y2="286.5" stroke="#111" stroke-width="1.5"/>
+<line x1="607.0" y1="108.0" x2="623.0" y2="108.0" stroke="#111" stroke-width="1.5"/>
+<line x1="607.0" y1="286.5" x2="623.0" y2="286.5" stroke="#111" stroke-width="1.5"/>
+<text x="615.0" y="187.3" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.667</text>
+<text x="615.0" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Normal</text>
+<text x="615.0" y="622.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">attention</text>
+<text x="615.0" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 3.95</text>
+<text x="615.0" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=2.5e-05</text>
+<rect x="725.6" y="204.8" width="77.7" height="377.2" fill="#79A66A" opacity="0.88"/>
+<line x1="764.4" y1="167.8" x2="764.4" y2="241.8" stroke="#111" stroke-width="1.5"/>
+<line x1="756.4" y1="167.8" x2="772.4" y2="167.8" stroke="#111" stroke-width="1.5"/>
+<line x1="756.4" y1="241.8" x2="772.4" y2="241.8" stroke="#111" stroke-width="1.5"/>
+<text x="764.4" y="194.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.665</text>
+<text x="764.4" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Normal attention</text>
+<text x="764.4" y="622.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">+ prior</text>
+<text x="764.4" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 3.80</text>
+<text x="764.4" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=1.1e-04</text>
+<rect x="875.0" y="195.0" width="77.7" height="387.0" fill="#7C4D8B" opacity="0.88"/>
+<line x1="913.9" y1="151.0" x2="913.9" y2="238.9" stroke="#111" stroke-width="1.5"/>
+<line x1="905.9" y1="151.0" x2="921.9" y2="151.0" stroke="#111" stroke-width="1.5"/>
+<line x1="905.9" y1="238.9" x2="921.9" y2="238.9" stroke="#111" stroke-width="1.5"/>
+<text x="913.9" y="185.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.668</text>
+<text x="913.9" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">Relapse-</text>
+<text x="913.9" y="622.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">INTERVENE</text>
+<text x="913.9" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 4.03</text>
+<text x="913.9" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=5.0e-05</text>
+<rect x="1024.4" y="201.1" width="77.7" height="380.9" fill="#A47DB0" opacity="0.88"/>
+<line x1="1063.3" y1="132.3" x2="1063.3" y2="269.9" stroke="#111" stroke-width="1.5"/>
+<line x1="1055.3" y1="132.3" x2="1071.3" y2="132.3" stroke="#111" stroke-width="1.5"/>
+<line x1="1055.3" y1="269.9" x2="1071.3" y2="269.9" stroke="#111" stroke-width="1.5"/>
+<text x="1063.3" y="191.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">0.666</text>
+<text x="1063.3" y="606.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">INTERVENE</text>
+<text x="1063.3" y="622.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#202020">strong prior</text>
+<text x="1063.3" y="652.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">HR 3.97</text>
+<text x="1063.3" y="667.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202020">p=3.1e-04</text>
+<rect x="84" y="642" width="1012" height="48" rx="6" fill="#f3f1f5" stroke="#d7d0df"/>
+<text x="590.0" y="672.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#202020">Best current learned model: Relapse-INTERVENE with very weak prior (C-index 0.668, HR 4.03). The margin over normal attention is small, so the claim should be sharpening plus biological grounding, not a dramatic prediction jump.</text>
+</svg>

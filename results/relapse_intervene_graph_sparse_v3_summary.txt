@@ -1,0 +1,71 @@
+Relapse-INTERVENE GraphSparse V3
+================================
+
+Purpose: sharpen module attention edges using graph-biased sparse attention, contrastive biology-edge loss, and leave-one-module-out validation.
+
+Aggregate model comparison
+--------------------------
+                       model  c_index_mean  c_index_sd  hr_mean  logrank_p_median  prior_corr_mean  edge_sep_mean  entropy_mean  high_events_mean  low_events_mean
+graph_sparse_v3_strong_edges      0.674654    0.015619 4.332940          0.000028         0.617670       0.298771      7.224384              30.6              9.2
+    graph_sparse_v3_balanced      0.679211    0.014630 4.509155          0.000024         0.617092       0.297078      7.306956              31.4              9.2
+        graph_sparse_v3_soft      0.681206    0.022005 4.460319          0.000030         0.633191       0.291179      7.547963              31.8              9.4
+
+Top stable edges
+----------------
+                       model                                edge  is_biology_edge  mean_attention  seeds_observed
+    graph_sparse_v3_balanced    proteostasis -> oxidative_stress             True        0.344529               5
+    graph_sparse_v3_balanced          srebp_lipid -> srebp_lipid             True        0.344241               5
+    graph_sparse_v3_balanced   apoptosis_iap -> oxidative_stress             True        0.343620               5
+    graph_sparse_v3_balanced        proteostasis -> proteostasis             True        0.336208               5
+    graph_sparse_v3_balanced akt_mtor_growth -> mito_translation             True        0.335631               5
+    graph_sparse_v3_balanced      akt_mtor_growth -> srebp_lipid             True        0.333415               5
+    graph_sparse_v3_balanced     srebp_lipid -> mito_translation             True        0.333400               5
+    graph_sparse_v3_balanced      apoptosis_iap -> apoptosis_iap             True        0.328720               5
+    graph_sparse_v3_balanced  akt_mtor_growth -> akt_mtor_growth             True        0.325905               5
+    graph_sparse_v3_balanced       apoptosis_iap -> proteostasis             True        0.322456               5
+        graph_sparse_v3_soft          srebp_lipid -> srebp_lipid             True        0.347798               5
+        graph_sparse_v3_soft    proteostasis -> oxidative_stress             True        0.338941               5
+        graph_sparse_v3_soft   apoptosis_iap -> oxidative_stress             True        0.338753               5
+        graph_sparse_v3_soft        proteostasis -> proteostasis             True        0.335006               5
+        graph_sparse_v3_soft akt_mtor_growth -> mito_translation             True        0.329049               5
+        graph_sparse_v3_soft      akt_mtor_growth -> srebp_lipid             True        0.328537               5
+        graph_sparse_v3_soft  akt_mtor_growth -> akt_mtor_growth             True        0.326969               5
+        graph_sparse_v3_soft      apoptosis_iap -> apoptosis_iap             True        0.326450               5
+        graph_sparse_v3_soft     srebp_lipid -> mito_translation             True        0.325099               5
+        graph_sparse_v3_soft       apoptosis_iap -> proteostasis             True        0.319118               5
+graph_sparse_v3_strong_edges    proteostasis -> oxidative_stress             True        0.347408               5
+graph_sparse_v3_strong_edges          srebp_lipid -> srebp_lipid             True        0.346862               5
+graph_sparse_v3_strong_edges   apoptosis_iap -> oxidative_stress             True        0.345841               5
+graph_sparse_v3_strong_edges akt_mtor_growth -> mito_translation             True        0.337174               5
+graph_sparse_v3_strong_edges      akt_mtor_growth -> srebp_lipid             True        0.336464               5
+graph_sparse_v3_strong_edges     srebp_lipid -> mito_translation             True        0.334736               5
+graph_sparse_v3_strong_edges        proteostasis -> proteostasis             True        0.334066               5
+graph_sparse_v3_strong_edges      apoptosis_iap -> apoptosis_iap             True        0.326399               5
+graph_sparse_v3_strong_edges       apoptosis_iap -> proteostasis             True        0.325837               5
+graph_sparse_v3_strong_edges  akt_mtor_growth -> akt_mtor_growth             True        0.324569               5
+
+Leave-one-module-out risk drop
+------------------------------
+                       model   module_removed  mean_risk_drop_when_removed  c_index_after_removal
+    graph_sparse_v3_balanced  akt_mtor_growth                    -0.015327               0.651553
+    graph_sparse_v3_balanced    apoptosis_iap                    -0.019625               0.654545
+    graph_sparse_v3_balanced mito_translation                    -0.010236               0.682136
+    graph_sparse_v3_balanced oxidative_stress                    -0.004771               0.643777
+    graph_sparse_v3_balanced     proteostasis                     0.022301               0.633530
+    graph_sparse_v3_balanced      srebp_lipid                    -0.003687               0.692813
+        graph_sparse_v3_soft  akt_mtor_growth                    -0.011796               0.650827
+        graph_sparse_v3_soft    apoptosis_iap                    -0.016302               0.660032
+        graph_sparse_v3_soft mito_translation                    -0.005909               0.678440
+        graph_sparse_v3_soft oxidative_stress                    -0.008763               0.646384
+        graph_sparse_v3_soft     proteostasis                     0.019822               0.639220
+        graph_sparse_v3_soft      srebp_lipid                    -0.004869               0.699275
+graph_sparse_v3_strong_edges  akt_mtor_growth                    -0.011312               0.650374
+graph_sparse_v3_strong_edges    apoptosis_iap                    -0.014397               0.651009
+graph_sparse_v3_strong_edges mito_translation                    -0.009166               0.670302
+graph_sparse_v3_strong_edges oxidative_stress                    -0.012341               0.639742
+graph_sparse_v3_strong_edges     proteostasis                     0.026647               0.630152
+graph_sparse_v3_strong_edges      srebp_lipid                    -0.002578               0.687304
+
+Interpretation
+--------------
+If GraphSparse V3 increases edge separation while keeping relapse C-index near the V2 model, it should be used as the interpretable edge-map model. The primary prediction model can remain module_intervene_constrained if it has the best C-index.

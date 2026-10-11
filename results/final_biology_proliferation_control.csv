@@ -1,0 +1,5 @@
+test,score,n,events,c_index,hazard_ratio_approx,logrank_p,high_events,low_events,cox_lrt_chi2_for_v3
+GSE31210 V3 relapse risk,v3_soft_mean_risk,136,42,0.7007481296758105,5.7885547053472575,5.033557527752069e-07,34.0,8.0,
+GSE31210 proliferation control,proliferation_score,136,35,0.7248923146678757,13.023272842153066,7.596484290592537e-09,32.0,3.0,
+V3 adjusted for proliferation,v3 + proliferation Cox,204,54,0.7114033099070506,,0.0001034932438287811,,,15.07188606262207
+V3 adjusted for clinical + proliferation,v3 + clinical + proliferation Cox,204,54,0.7587848560417139,,6.536822604986736e-05,,,15.940406799316406

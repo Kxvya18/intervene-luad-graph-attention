@@ -1,0 +1,42 @@
+Relapse-INTERVENE survival head comparison
+==========================================
+
+Dataset: GSE31210 prognosis-included primary NSCLC tumors.
+Evaluation: five-fold out-of-fold risk scores repeated over five seeds.
+Endpoint: relapse-free months with relapse event indicator.
+
+Aggregate model comparison
+--------------------------
+                          model  c_index_mean  c_index_sd  logrank_p_median  hazard_ratio_mean  risk_prior_corr_mean  high_events_mean  low_events_mean
+   relapse_intervene_prior_0_03      0.667604    0.009956          0.000050           4.025961              0.614323              30.2              9.4
+           normal_attention_mha      0.667082    0.020202          0.000025           3.954180              0.579630              30.4              9.6
+   relapse_intervene_prior_0_30      0.666221    0.015571          0.000314           3.967187              0.693990              30.4             10.0
+normal_attention_mha_with_prior      0.665382    0.008371          0.000111           3.800696              0.667101              29.6             10.2
+              relapse_intervene      0.664611    0.015001          0.000294           3.853649              0.664103              30.0             10.0
+   relapse_intervene_prior_0_08      0.664022    0.013106          0.000348           3.727875              0.642117              30.0             10.2
+ no_prior_interleaved_attention      0.661823    0.013876          0.000035           4.071286              0.572338              30.2              9.4
+             linear_cox_modules      0.626865    0.036365          0.000259           3.414188              0.202800              26.8              9.6
+
+Stable top interleaved attention edges
+--------------------------------------
+                                edge  seeds_observed  mean_enrichment  mean_attention
+        srebp_lipid -> apoptosis_iap               5         0.002091        0.168758
+       proteostasis -> apoptosis_iap               5         0.001918        0.168584
+oxidative_stress -> oxidative_stress               5         0.001804        0.168470
+        apoptosis_iap -> srebp_lipid               5         0.001306        0.167973
+   mito_translation -> apoptosis_iap               5         0.001306        0.167972
+   oxidative_stress -> apoptosis_iap               5         0.000850        0.167516
+  akt_mtor_growth -> akt_mtor_growth               5         0.000598        0.167265
+ mito_translation -> akt_mtor_growth               5         0.000488        0.167155
+      srebp_lipid -> akt_mtor_growth               5         0.000426        0.167093
+ oxidative_stress -> akt_mtor_growth               5         0.000282        0.166948
+    akt_mtor_growth -> apoptosis_iap               5         0.000182        0.166849
+      apoptosis_iap -> apoptosis_iap               5         0.000171        0.166838
+     proteostasis -> akt_mtor_growth               5         0.000165        0.166832
+mito_translation -> oxidative_stress               5         0.000045        0.166712
+      akt_mtor_growth -> srebp_lipid               5        -0.000031        0.166636
+   apoptosis_iap -> oxidative_stress               5        -0.000082        0.166585
+
+Interpretation
+--------------
+A good Relapse-INTERVENE result is not only higher C-index. It should also preserve the validated biology: high-risk patients should be enriched for relapse, and the interleaved attention edges should repeatedly connect lipid/SREBP, mitochondrial translation, oxidative stress, proteostasis, apoptosis/IAP, and AKT/mTOR modules.

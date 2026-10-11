@@ -1,0 +1,120 @@
+Proteostasis-Redox External Validation
+======================================
+
+Main goal: test the tighter proteostasis-redox relapse state externally, instead of the older broad SREBP-heavy state.
+
+Cohorts:
+- GSE68465: lung adenocarcinoma; first progression/relapse plus follow-up time.
+- GSE30219: NSCLC; disease-free survival and relapse labels; adenocarcinoma subset available.
+- GSE37745: NSCLC; recurrence labels and recurrence/last-visit time; adenocarcinoma subset available.
+
+Main comparable tests (n>=50, events>=10):
+  cohort              subset                       score   n  events  c_index  hr_high_low    logrank_p    cox_lrt_p  cox_chi2
+GSE30219      adenocarcinoma older_broad_intervene_state  83      27 0.657526     2.836644 2.012619e-02 1.210967e-02  6.294741
+GSE30219                t1n0 older_broad_intervene_state 145      35 0.595976     1.714156 1.557510e-01 1.594553e-01  1.979384
+GSE30219                 all older_broad_intervene_state 274     114 0.557261     1.546531 5.476083e-02 2.686747e-02  4.899307
+GSE30219  non_adenocarcinoma older_broad_intervene_state 191      87 0.509492     1.209702 5.358795e-01 5.760710e-01  0.312630
+GSE30219                t1n0  oxidative_stress_expr_mean 145      35 0.563145     1.734806 1.399200e-01 2.556394e-01  1.292219
+GSE30219                 all  oxidative_stress_expr_mean 274     114 0.560790     1.690661 2.129151e-02 2.399941e-02  5.094675
+GSE30219      adenocarcinoma  oxidative_stress_expr_mean  83      27 0.549107     1.630280 2.285499e-01 4.702908e-01  0.521293
+GSE30219  non_adenocarcinoma  oxidative_stress_expr_mean 191      87 0.534524     1.675471 2.112178e-01 1.915131e-01  1.705939
+GSE30219      adenocarcinoma         proliferation_score  83      27 0.779974     5.747059 1.013089e-04 1.690325e-05 18.509804
+GSE30219                 all         proliferation_score 274     114 0.680175     5.507724 1.378947e-08 9.944639e-12 46.339354
+GSE30219                t1n0         proliferation_score 145      35 0.650516     4.110418 5.058473e-03 2.371438e-03  9.237227
+GSE30219  non_adenocarcinoma         proliferation_score 191      87 0.613903     2.924184 2.485871e-03 4.139449e-06 21.199164
+GSE30219      adenocarcinoma      proteostasis_expr_mean  83      27 0.642219     1.862960 1.526976e-01 3.195361e-02  4.600984
+GSE30219                t1n0      proteostasis_expr_mean 145      35 0.553879     0.977126 9.118252e-01 4.011903e-01  0.704756
+GSE30219                 all      proteostasis_expr_mean 274     114 0.509345     1.118878 5.069672e-01 5.234185e-01  0.407152
+GSE30219  non_adenocarcinoma      proteostasis_expr_mean 191      87 0.461846     0.920240 8.093347e-01 4.251464e-01  0.636045
+GSE30219      adenocarcinoma    proteostasis_redox_state  83      27 0.628189     2.553074 4.004966e-02 7.609594e-02  3.146373
+GSE30219                t1n0    proteostasis_redox_state 145      35 0.584856     1.691752 2.271363e-01 2.177416e-01  1.519194
+GSE30219                 all    proteostasis_redox_state 274     114 0.540193     1.472411 9.293436e-02 7.381822e-02  3.196009
+GSE30219  non_adenocarcinoma    proteostasis_redox_state 191      87 0.494323     1.067966 9.256015e-01 7.185041e-01  0.129930
+GSE30219      adenocarcinoma           stress_core_state  83      27 0.661990     3.514376 2.198090e-02 3.456086e-02  4.466741
+GSE30219                t1n0           stress_core_state 145      35 0.611597     2.364968 6.557852e-02 1.239560e-01  2.366610
+GSE30219                 all           stress_core_state 274     114 0.562506     1.573564 9.391376e-02 2.596020e-02  4.958668
+GSE30219  non_adenocarcinoma           stress_core_state 191      87 0.521403     1.440369 3.473882e-01 3.702285e-01  0.802897
+GSE37745      adenocarcinoma older_broad_intervene_state  53      26 0.599260     2.605830 8.488611e-02 6.092351e-02  3.512064
+GSE37745                 all older_broad_intervene_state  96      49 0.582239     2.287937 4.081347e-02 2.810020e-02  4.821909
+GSE37745             stage_i older_broad_intervene_state  63      31 0.575929     1.791094 2.340985e-01 1.052488e-01  2.624151
+GSE37745      adenocarcinoma  oxidative_stress_expr_mean  53      26 0.556104     1.085671 8.577029e-01 9.831449e-01  0.000446
+GSE37745                 all  oxidative_stress_expr_mean  96      49 0.543884     1.122432 8.134408e-01 3.987180e-01  0.712189
+GSE37745             stage_i  oxidative_stress_expr_mean  63      31 0.490307     0.894057 8.929693e-01 9.843590e-01  0.000384
+GSE37745             stage_i         proliferation_score  63      31 0.651050     2.346390 6.215691e-02 9.794644e-02  2.738667
+GSE37745                 all         proliferation_score  96      49 0.605390     2.098794 6.102913e-02 2.228139e-01  1.486156
+GSE37745      adenocarcinoma         proliferation_score  53      26 0.604192     1.669720 5.529325e-01 3.030520e-01  1.060716
+GSE37745             stage_i      proteostasis_expr_mean  63      31 0.567044     2.224895 1.525480e-01 5.851922e-01  0.297915
+GSE37745                 all      proteostasis_expr_mean  96      49 0.550449     1.759908 2.588283e-01 4.061670e-01  0.689992
+GSE37745      adenocarcinoma      proteostasis_expr_mean  53      26 0.532676     1.676683 3.144815e-01 5.416833e-01  0.372429
+GSE37745             stage_i    proteostasis_redox_state  63      31 0.571890     1.958306 1.633929e-01 7.468142e-01  0.104228
+GSE37745                 all    proteostasis_redox_state  96      49 0.567035     1.480069 3.439589e-01 3.083218e-01  1.037851
+GSE37745      adenocarcinoma    proteostasis_redox_state  53      26 0.548705     1.855739 2.078713e-01 6.592311e-01  0.194459
+GSE37745             stage_i           stress_core_state  63      31 0.592084     2.158133 1.380379e-01 1.940334e-01  1.686724
+GSE37745                 all           stress_core_state  96      49 0.573255     1.820298 2.308473e-01 9.816191e-02  2.735156
+GSE37745      adenocarcinoma           stress_core_state  53      26 0.546239     1.405723 4.813515e-01 2.436410e-01  1.359403
+GSE68465                 all older_broad_intervene_state 333     178 0.544777     1.360160 2.038647e-01 8.666702e-02  2.935217
+GSE68465       node_negative older_broad_intervene_state 220     101 0.535207     1.355908 3.906011e-01 5.015526e-01  0.451650
+GSE68465 t1_t2_node_negative older_broad_intervene_state 208      90 0.528430     1.221315 7.836023e-01 7.623926e-01  0.091410
+GSE68465                 all  oxidative_stress_expr_mean 333     178 0.515443     0.972001 8.238874e-01 9.251463e-01  0.008827
+GSE68465       node_negative  oxidative_stress_expr_mean 220     101 0.500100     0.905242 9.023642e-01 9.105616e-01  0.012618
+GSE68465 t1_t2_node_negative  oxidative_stress_expr_mean 208      90 0.488957     0.708766 3.423613e-01 8.801217e-01  0.022745
+GSE68465                 all         proliferation_score 333     178 0.610227     1.674870 7.759148e-04 2.962873e-02  4.730705
+GSE68465       node_negative         proliferation_score 220     101 0.603083     1.664151 7.485030e-03 1.847834e-01  1.758727
+GSE68465 t1_t2_node_negative         proliferation_score 208      90 0.584665     1.570675 1.653506e-02 5.252042e-01  0.403662
+GSE68465                 all      proteostasis_expr_mean 333     178 0.568828     1.320097 7.646039e-02 7.216241e-02  3.233135
+GSE68465       node_negative      proteostasis_expr_mean 220     101 0.567109     1.452521 8.695404e-02 1.934294e-01  1.691302
+GSE68465 t1_t2_node_negative      proteostasis_expr_mean 208      90 0.550125     1.260890 2.917823e-01 5.111421e-01  0.431728
+GSE68465       node_negative    proteostasis_redox_state 220     101 0.558967     1.138006 3.936378e-01 4.178237e-01  0.656428
+GSE68465                 all    proteostasis_redox_state 333     178 0.558188     1.125570 2.972339e-01 2.717009e-01  1.208139
+GSE68465 t1_t2_node_negative    proteostasis_redox_state 208      90 0.545191     1.019603 6.781970e-01 7.763769e-01  0.080681
+GSE68465                 all           stress_core_state 333     178 0.562460     1.541145 3.156706e-02 9.240285e-02  2.832006
+GSE68465       node_negative           stress_core_state 220     101 0.551425     1.238992 2.952558e-01 4.403906e-01  0.595264
+GSE68465 t1_t2_node_negative           stress_core_state 208      90 0.536184     1.157095 4.692826e-01 8.865864e-01  0.020342
+
+Best external/subtype signals:
+  cohort              subset                              score   n  events  c_index  hr_high_low    logrank_p    cox_lrt_p  cox_chi2
+GSE30219      adenocarcinoma                proliferation_score  83      27 0.779974     5.747059 1.013089e-04 1.690325e-05 18.509804
+GSE30219                 all                proliferation_score 274     114 0.680175     5.507724 1.378947e-08 9.944639e-12 46.339354
+GSE30219      adenocarcinoma                  stress_core_state  83      27 0.661990     3.514376 2.198090e-02 3.456086e-02  4.466741
+GSE30219      adenocarcinoma        older_broad_intervene_state  83      27 0.657526     2.836644 2.012619e-02 1.210967e-02  6.294741
+GSE37745             stage_i                proliferation_score  63      31 0.651050     2.346390 6.215691e-02 9.794644e-02  2.738667
+GSE30219                t1n0                proliferation_score 145      35 0.650516     4.110418 5.058473e-03 2.371438e-03  9.237227
+GSE30219      adenocarcinoma proteostasis_redox_apoptosis_state  83      27 0.643495     3.815422 8.003199e-03 6.677714e-02  3.360516
+GSE30219      adenocarcinoma             proteostasis_expr_mean  83      27 0.642219     1.862960 1.526976e-01 3.195361e-02  4.600984
+GSE30219      adenocarcinoma           proteostasis_redox_state  83      27 0.628189     2.553074 4.004966e-02 7.609594e-02  3.146373
+GSE30219                t1n0 proteostasis_redox_apoptosis_state 145      35 0.619275     3.568609 1.843481e-02 9.422719e-02  2.800632
+GSE30219  non_adenocarcinoma                proliferation_score 191      87 0.613903     2.924184 2.485871e-03 4.139449e-06 21.199164
+GSE30219                t1n0                  stress_core_state 145      35 0.611597     2.364968 6.557852e-02 1.239560e-01  2.366610
+GSE68465                 all                proliferation_score 333     178 0.610227     1.674870 7.759148e-04 2.962873e-02  4.730705
+GSE37745                 all                proliferation_score  96      49 0.605390     2.098794 6.102913e-02 2.228139e-01  1.486156
+GSE37745      adenocarcinoma                proliferation_score  53      26 0.604192     1.669720 5.529325e-01 3.030520e-01  1.060716
+GSE68465       node_negative                proliferation_score 220     101 0.603083     1.664151 7.485030e-03 1.847834e-01  1.758727
+GSE37745             stage_i            apoptosis_iap_expr_mean  63      31 0.602585     3.527934 1.940707e-02 5.590859e-02  3.654778
+GSE37745      adenocarcinoma        older_broad_intervene_state  53      26 0.599260     2.605830 8.488611e-02 6.092351e-02  3.512064
+GSE30219                t1n0        older_broad_intervene_state 145      35 0.595976     1.714156 1.557510e-01 1.594553e-01  1.979384
+GSE37745             stage_i                  stress_core_state  63      31 0.592084     2.158133 1.380379e-01 1.940334e-01  1.686724
+GSE37745             stage_i proteostasis_redox_apoptosis_state  63      31 0.591276     3.245785 5.672014e-02 2.851658e-01  1.142305
+GSE30219                t1n0           proteostasis_redox_state 145      35 0.584856     1.691752 2.271363e-01 2.177416e-01  1.519194
+GSE68465 t1_t2_node_negative                proliferation_score 208      90 0.584665     1.570675 1.653506e-02 5.252042e-01  0.403662
+GSE37745                 all        older_broad_intervene_state  96      49 0.582239     2.287937 4.081347e-02 2.810020e-02  4.821909
+GSE37745                 all proteostasis_redox_apoptosis_state  96      49 0.577747     2.350693 8.707318e-02 1.134948e-01  2.504870
+
+Clinical-adjusted tests:
+  cohort                       score   n  events  clinical_only_c_index  clinical_plus_score_c_index  delta_c_index  lrt_chi2_for_score  lrt_p_for_score
+GSE30219 older_broad_intervene_state 274     114               0.694431                     0.703204       0.008773            5.875385         0.015354
+GSE30219         proliferation_score 274     114               0.694431                     0.724993       0.030562           14.809250         0.000119
+GSE30219    proteostasis_redox_state 274     114               0.694431                     0.701249       0.006818            1.815062         0.177902
+GSE30219           stress_core_state 274     114               0.694431                     0.704253       0.009822            3.246998         0.071554
+GSE37745 older_broad_intervene_state  96      49               0.590359                     0.620940       0.030581            5.100607         0.023917
+GSE37745         proliferation_score  96      49               0.590359                     0.617830       0.027471            0.820065         0.365161
+GSE37745    proteostasis_redox_state  96      49               0.590359                     0.608155       0.017795            0.690086         0.406135
+GSE37745           stress_core_state  96      49               0.590359                     0.625086       0.034727            2.416037         0.120098
+GSE68465 older_broad_intervene_state 333     178               0.686239                     0.690408       0.004168            2.171494         0.140590
+GSE68465         proliferation_score 333     178               0.686239                     0.694136       0.007896            3.265049         0.070771
+GSE68465    proteostasis_redox_state 333     178               0.686239                     0.689061       0.002822            0.628090         0.428057
+GSE68465           stress_core_state 333     178               0.686239                     0.691314       0.005074            2.103422         0.146970
+
+Interpretation rules:
+- A valid external signal should beat or complement proliferation and should not be weaker than the older broad state.
+- GSE68465 is the strongest external LUAD relapse/progression test because it is lung adenocarcinoma-specific and large.
+- GSE30219/GSE37745 are useful supporting checks but include mixed NSCLC histologies.

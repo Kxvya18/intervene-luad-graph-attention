@@ -1,0 +1,126 @@
+Full Interleaved Biological-Physics Attention prototype
+======================================================
+
+Implementation note:
+This file now contains two IBPA modes. IBPA-v2 is the main discovery mode: it learns Q/K/V projections, alpha_Q/alpha_K/alpha_V interleaved pseudo-head mixing, and module attention by reconstructing paper-facing biological-physics module states with a weak thermodynamic/SREBP/mitochondrial physics prior. PRISM is then used only for validation/enrichment. The supervised PRISM-prediction models are kept as audit comparisons.
+
+Models used: 71
+Full tokens: srebp_lipid, mito_translation, oxidative_stress, apoptosis_iap, proteostasis, akt_mtor_growth, generic_cytotoxic_control, direct_lipid_secondary
+Paper-facing tokens: srebp_lipid, mito_translation, oxidative_stress, apoptosis_iap, proteostasis, akt_mtor_growth
+Control tokens excluded from paper-facing IBPA: generic_cytotoxic_control, direct_lipid_secondary
+Features per token: dependency, expression, copy_number, thermo_residual, selectivity, context, generic_cytotoxic_prism_control, direct_lipid_prism_control
+
+IBPA-v2 discovery training metrics
+----------------------------------
+reconstruction_mse: 0.071704
+state_prior_corr: 0.998058
+state_std: 1.000000
+prior_weight: 0.220000
+include_srebp: 1.000000
+include_mito: 1.000000
+include_oxidative: 1.000000
+
+IBPA-v2 validation/enrichment after unsupervised training
+--------------------------------------------------------
+                                     test  n  n_high  n_low  high_mean  low_mean  high_minus_low  effect_size  perm_p_two_sided  reconstruction_mse  state_prior_corr  state_std  prior_weight  include_srebp  include_mito  include_oxidative
+        PRISM stress-survival sensitivity 71      24     24   1.056323  0.910615        0.145709     0.578589          0.043991            0.071704          0.998058        1.0          0.22           True          True               True
+           PRISM direct lipid sensitivity 71      24     24   0.316833  0.257071        0.059762     0.390368          0.181164            0.071704          0.998058        1.0          0.22           True          True               True
+      PRISM generic cytotoxic sensitivity 71      24     24   1.610151  1.712029       -0.101878    -0.288733          0.341732            0.071704          0.998058        1.0          0.22           True          True               True
+    stress-survival minus cytotoxic score 71      24     24   0.454392 -0.225253        0.679646     0.830824          0.002200            0.071704          0.998058        1.0          0.22           True          True               True
+ cytotoxic-residual stress-survival score 71      24     24   0.614680 -0.390022        1.004702     1.004702          0.000400            0.071704          0.998058        1.0          0.22           True          True               True
+SREBP x mitochondrial dependency coupling 71      24     24   0.395654  0.344858        0.050796     0.051156          0.857828            0.071704          0.998058        1.0          0.22           True          True               True
+    SREBP x mitochondrial thermo coupling 71      24     24   0.409920  0.308189        0.101731     0.101889          0.734853            0.071704          0.998058        1.0          0.22           True          True               True
+           KEAP1/NFE2L2 oxidative context 71      24     24   0.355399 -0.386758        0.742158     0.742158          0.008998            0.071704          0.998058        1.0          0.22           True          True               True
+      KEAP1/NFE2L2 high-impact enrichment 71      24     24   0.291667  0.000000        0.291667          NaN               NaN            0.071704          0.998058        1.0          0.22           True          True               True
+
+Top IBPA-v2 module features by state correlation
+------------------------------------------------
+           token         feature  high_state_mean  low_state_mean  high_minus_low  state_corr
+     srebp_lipid      dependency         0.811800       -0.715034        1.526834    0.710291
+     srebp_lipid thermo_residual         0.790425       -0.695305        1.485730    0.706015
+mito_translation thermo_residual         0.750360       -0.699610        1.449971    0.636167
+mito_translation      dependency         0.766396       -0.705932        1.472328    0.627790
+ akt_mtor_growth     copy_number         0.465585       -0.398150        0.863735    0.290192
+oxidative_stress         context         0.355399       -0.386758        0.742158    0.223312
+oxidative_stress thermo_residual         0.242751       -0.194807        0.437558    0.150255
+ akt_mtor_growth thermo_residual         0.160794        0.035097        0.125696    0.139114
+    proteostasis      dependency         0.083751       -0.183427        0.267178    0.118155
+    proteostasis thermo_residual         0.057454       -0.164202        0.221656    0.104678
+oxidative_stress      dependency         0.102447       -0.177822        0.280269    0.099845
+oxidative_stress     copy_number         0.106542        0.048343        0.058199    0.095748
+oxidative_stress      expression         0.186558       -0.080108        0.266667    0.066963
+     srebp_lipid      expression        -0.007509       -0.231254        0.223744    0.063361
+   apoptosis_iap     copy_number         0.037682        0.021094        0.016589    0.038304
+mito_translation     copy_number         0.020220       -0.001283        0.021503    0.008390
+mito_translation      expression        -0.137598       -0.048141       -0.089458   -0.001354
+ akt_mtor_growth      dependency        -0.119495       -0.047973       -0.071522   -0.038162
+    proteostasis     copy_number        -0.049472       -0.095125        0.045653   -0.052891
+     srebp_lipid     copy_number        -0.060281       -0.011731       -0.048550   -0.056503
+
+Supervised audit model comparison
+---------------------------------
+        model                   dataset                             target  n_features  n_models   cv_corr     cv_r2   cv_mae
+residual_only full_tokens_with_controls cytotoxic_residual_stress_survival           8        71  0.270362  0.051263 0.774147
+   srebp_only full_tokens_with_controls cytotoxic_residual_stress_survival           8        71  0.262128  0.062574 0.798677
+    mito_only full_tokens_with_controls cytotoxic_residual_stress_survival           8        71  0.260762  0.042547 0.762808
+module_linear full_tokens_with_controls cytotoxic_residual_stress_survival          64        71  0.234923 -0.239051 0.905504
+         ibpa full_tokens_with_controls cytotoxic_residual_stress_survival          16        71  0.165375  0.020213 0.798095
+          mha full_tokens_with_controls cytotoxic_residual_stress_survival          16        71  0.103339 -0.003636 0.802387
+residual_only  paper_tokens_no_controls cytotoxic_residual_stress_survival           6        71  0.277683  0.056703 0.777645
+   srebp_only  paper_tokens_no_controls cytotoxic_residual_stress_survival           6        71  0.262128  0.062574 0.798677
+    mito_only  paper_tokens_no_controls cytotoxic_residual_stress_survival           6        71  0.260762  0.042547 0.762808
+module_linear  paper_tokens_no_controls cytotoxic_residual_stress_survival          36        71  0.228828 -0.165728 0.881196
+         ibpa  paper_tokens_no_controls cytotoxic_residual_stress_survival          16        71  0.051398 -0.064949 0.847971
+          mha  paper_tokens_no_controls cytotoxic_residual_stress_survival          16        71  0.006850 -0.081577 0.870004
+module_linear full_tokens_with_controls           specific_stress_survival          64        71  0.340528 -0.076109 0.686253
+    mito_only full_tokens_with_controls           specific_stress_survival           8        71  0.261689  0.051275 0.627657
+   srebp_only full_tokens_with_controls           specific_stress_survival           8        71  0.169325  0.007827 0.634076
+residual_only full_tokens_with_controls           specific_stress_survival           8        71  0.162667 -0.014487 0.652805
+          mha full_tokens_with_controls           specific_stress_survival          16        71  0.064902 -0.017117 0.645829
+         ibpa full_tokens_with_controls           specific_stress_survival          16        71  0.004957 -0.031752 0.656621
+    mito_only  paper_tokens_no_controls           specific_stress_survival           6        71  0.261689  0.051275 0.627657
+module_linear  paper_tokens_no_controls           specific_stress_survival          36        71  0.186682 -0.174388 0.706885
+   srebp_only  paper_tokens_no_controls           specific_stress_survival           6        71  0.169325  0.007827 0.634076
+residual_only  paper_tokens_no_controls           specific_stress_survival           6        71  0.145527 -0.022848 0.659296
+         ibpa  paper_tokens_no_controls           specific_stress_survival          16        71 -0.065400 -0.159763 0.700974
+          mha  paper_tokens_no_controls           specific_stress_survival          16        71 -0.088705 -0.126459 0.698448
+module_linear full_tokens_with_controls                    stress_survival          64        71  0.573243  0.273264 0.172025
+         ibpa full_tokens_with_controls                    stress_survival          16        71  0.460842  0.191995 0.177220
+          mha full_tokens_with_controls                    stress_survival          16        71  0.303793  0.075279 0.177119
+    mito_only full_tokens_with_controls                    stress_survival           8        71  0.193342  0.012038 0.194716
+   srebp_only full_tokens_with_controls                    stress_survival           8        71  0.119342 -0.024749 0.189552
+residual_only full_tokens_with_controls                    stress_survival           8        71  0.048653 -0.073128 0.198910
+    mito_only  paper_tokens_no_controls                    stress_survival           6        71  0.193342  0.012038 0.194716
+module_linear  paper_tokens_no_controls                    stress_survival          36        71  0.188346 -0.136198 0.208640
+   srebp_only  paper_tokens_no_controls                    stress_survival           6        71  0.119342 -0.024749 0.189552
+residual_only  paper_tokens_no_controls                    stress_survival           6        71 -0.018252 -0.093496 0.202155
+         ibpa  paper_tokens_no_controls                    stress_survival          16        71 -0.049274 -0.051646 0.196011
+          mha  paper_tokens_no_controls                    stress_survival          16        71 -0.081196 -0.113816 0.202807
+
+Top IBPA attention edges
+------------------------
+            model  head  pseudohead     source_token     target_token  mean_attention  attention_enrichment_vs_uniform
+ibpa_v2_discovery     1           0      srebp_lipid mito_translation        0.632497                         0.465830
+ibpa_v2_discovery     1           0     proteostasis mito_translation        0.620824                         0.454157
+ibpa_v2_discovery     1           0    apoptosis_iap mito_translation        0.619518                         0.452851
+ibpa_v2_discovery     1           0  akt_mtor_growth mito_translation        0.608426                         0.441759
+ibpa_v2_discovery     0           1     proteostasis mito_translation        0.391078                         0.224412
+ibpa_v2_discovery     0           1      srebp_lipid mito_translation        0.385913                         0.219246
+ibpa_v2_discovery     0           0  akt_mtor_growth oxidative_stress        0.369954                         0.203288
+ibpa_v2_discovery     0           1  akt_mtor_growth mito_translation        0.368942                         0.202275
+ibpa_v2_discovery     0           1    apoptosis_iap mito_translation        0.365894                         0.199228
+ibpa_v2_discovery     3           0 mito_translation oxidative_stress        0.362894                         0.196228
+ibpa_v2_discovery     0           0      srebp_lipid mito_translation        0.362339                         0.195673
+ibpa_v2_discovery     0           0    apoptosis_iap oxidative_stress        0.361001                         0.194334
+ibpa_v2_discovery     0           0     proteostasis mito_translation        0.354475                         0.187808
+ibpa_v2_discovery     0           0     proteostasis oxidative_stress        0.352614                         0.185947
+ibpa_v2_discovery     0           0      srebp_lipid oxidative_stress        0.345755                         0.179088
+ibpa_v2_discovery     0           0  akt_mtor_growth mito_translation        0.344279                         0.177612
+ibpa_v2_discovery     0           0    apoptosis_iap mito_translation        0.341035                         0.174369
+ibpa_v2_discovery     2           0 mito_translation mito_translation        0.307791                         0.141125
+ibpa_v2_discovery     1           1     proteostasis mito_translation        0.307073                         0.140407
+ibpa_v2_discovery     0           1  akt_mtor_growth oxidative_stress        0.298549                         0.131882
+
+Interpretation
+--------------
+IBPA-v2 should be judged primarily by whether its learned state enriches for biologically specific stress-survival vulnerability while avoiding generic cytotoxic and direct-lipid-only explanations. The best supervised audit model remains module_linear on stress_survival (cv_corr=0.573, cv_r2=0.273), but that is not the main IBPA-v2 objective.

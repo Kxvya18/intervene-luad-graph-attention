@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#171717"/>
+  </marker>
+</defs>
+<rect width="1080" height="560" fill="white"/>
+<text x="48.0" y="42.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#171717" text-anchor="start">PRISM stress-survival sensitivity is higher in high INTERVENE state</text>
+<text x="48.0" y="66.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#555555" text-anchor="start">Each dot is one NSCLC cell line; boxes show interquartile range</text>
+<line x1="120.0" y1="115.0" x2="120.0" y2="475.0" stroke="#171717" stroke-width="1.1"/>
+<line x1="120.0" y1="475.0" x2="680.0" y2="475.0" stroke="#171717" stroke-width="1.1"/>
+<line x1="120.0" y1="440.2" x2="680.0" y2="440.2" stroke="#cfcfcf" stroke-width="1"/>
+<text x="112.0" y="119.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="end">2.1</text>
+<text x="112.0" y="444.2" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="end">0</text>
+<text x="112.0" y="475.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#555555" text-anchor="end">-0.2</text>
+<text x="78.0" y="295.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">drug sensitivity</text>
+<rect x="252.0" y="282.8" width="76.0" height="42.9" rx="3.0" fill="#ffffff" stroke="#7e8a96" stroke-width="1.8"/>
+<line x1="245.0" y1="307.7" x2="335.0" y2="307.7" stroke="#171717" stroke-width="2"/>
+<circle cx="267.3" cy="333.5" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="324.8" cy="288.2" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="279.8" cy="324.1" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="260.8" cy="309.4" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="273.8" cy="328.3" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="328.7" cy="354.2" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="244.8" cy="311.9" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="311.0" cy="306.0" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="324.6" cy="359.2" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="305.5" cy="193.5" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="261.8" cy="282.4" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="248.3" cy="267.6" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="281.2" cy="236.5" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="325.8" cy="311.3" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="324.7" cy="347.2" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="334.2" cy="329.9" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="324.4" cy="319.1" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="317.2" cy="291.7" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="243.4" cy="267.3" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="330.7" cy="295.0" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="250.3" cy="225.8" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="290.5" cy="324.8" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="291.6" cy="282.9" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<circle cx="279.4" cy="288.7" r="4.0" fill="#9aa7b5" stroke="white" stroke-width="0.5"/>
+<text x="290.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Low INTERVENE</text>
+<text x="290.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">n=24</text>
+<rect x="472.0" y="250.1" width="76.0" height="53.6" rx="3.0" fill="#ffffff" stroke="#2b6ca3" stroke-width="1.8"/>
+<line x1="465.0" y1="288.6" x2="555.0" y2="288.6" stroke="#171717" stroke-width="2"/>
+<circle cx="466.8" cy="229.8" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="495.9" cy="149.8" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="529.4" cy="264.8" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="555.6" cy="310.0" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="490.6" cy="241.4" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="483.9" cy="211.7" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="537.3" cy="253.0" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="526.6" cy="337.0" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="553.3" cy="280.7" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="519.0" cy="234.8" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="520.7" cy="294.2" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="500.5" cy="291.2" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="528.2" cy="302.1" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="519.4" cy="305.3" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="463.4" cy="216.3" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="492.0" cy="286.0" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="502.3" cy="294.7" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="481.5" cy="256.1" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="540.3" cy="284.8" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="527.8" cy="298.6" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="462.4" cy="303.2" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="501.6" cy="327.0" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="469.0" cy="332.1" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<circle cx="544.8" cy="332.4" r="4.0" fill="#2b6ca3" stroke="white" stroke-width="0.5"/>
+<text x="510.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">High INTERVENE</text>
+<text x="510.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#555555" text-anchor="middle">n=24</text>
+<rect x="715.0" y="160.0" width="310.0" height="118.0" rx="8.0" fill="#ffffff" stroke="#2b6ca3" stroke-width="1.5"/>
+<text x="742.0" y="195.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#171717" text-anchor="start">High - low difference</text>
+<text x="742.0" y="230.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2b6ca3" text-anchor="start">Δ = 0.146</text>
+<text x="742.0" y="260.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#555555" text-anchor="start">This is the paper-facing high-vs-</text>
+<text x="742.0" y="276.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#555555" text-anchor="start">low INTERVENE state comparison.</text>
+</svg>

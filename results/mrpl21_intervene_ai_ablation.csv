@@ -1,0 +1,12 @@
+model,source,n,events,c_index,logrank_p
+MRPL21 + proteasome-core + proliferation,extracted/refined score,204,54,0.7611652686465654,1.0979901158160218e-12
+INTERVENE-refined genes MRPL21+PSMA1+PSMB5+TXNRD1,extracted/refined score,204,54,0.7594649739288143,3.46482793141843e-12
+MRPL21 + proteasome-core manual/extracted,extracted/refined score,204,54,0.7558376785309454,2.6451941813554863e-12
+INTERVENE V3 OOF mean risk,extracted/refined score,204,54,0.7007481296758105,5.033557527752069e-07
+MRPL21 + proteasome-core residualized for proliferation,extracted/refined score,204,54,0.6996145998639764,7.617444854767927e-07
+raw module score,extracted/refined score,204,54,0.6959873044661075,4.7498128513842375e-07
+INTERVENE-refined genes residualized for proliferation,extracted/refined score,204,54,0.6919065971435049,3.834042469901237e-06
+GraphSparse INTERVENE V3,"existing AI model, mean across seeds",204,54,0.6812060757197914,1.2985451254451972e-06
+normal MHA,existing AI baseline,204,54,0.6670822942643392,1.422686272444468e-05
+raw module prior,existing AI baseline,204,54,0.6645885286783042,0.0001079634569792
+no-prior IHA-style attention,existing AI baseline,204,54,0.661822715937429,1.0518631681486015e-05

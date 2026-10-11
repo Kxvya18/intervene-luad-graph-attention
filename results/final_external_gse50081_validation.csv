@@ -1,0 +1,5 @@
+test,score,n,events,c_index,hazard_ratio_approx,logrank_p,high_events,low_events,cox_lrt_chi2_for_state
+GSE50081 external DFS/recurrence fixed INTERVENE state,fixed_intervene_state,118,32,0.4846373139056066,0.9840289857565653,0.909586607226742,15.0,17.0,
+GSE50081 external proliferation control,proliferation_score,118,28,0.5468799493189737,1.3497507574766345,0.3909456137711311,15.0,13.0,
+GSE50081 fixed INTERVENE adjusted for proliferation,state + proliferation Cox,177,51,0.5627177700348432,,0.29518959177650356,,,1.0958003997802734
+GSE50081 fixed INTERVENE adjusted for clinical variables,state + clinical Cox,177,51,0.6870446626544188,,0.7907867651524869,,,0.07037830352783203

@@ -1,0 +1,10 @@
+refined_vulnerability_class,n_compounds,mean_sensitivity_score,median_sensitivity_score,mean_high_minus_low_lfc,top_compounds
+proteostasis_epigenetic_stress,19,0.39351943610397216,0.2811555619625008,-0.3178243981912564,"GSK3117391, CXD101, VLX1570, tucidinostat, EDO-S101, citarinostat, geldanamycin, TC-H-106, Debio-0932, spautin-1"
+akt_mtor_survival,20,0.2346561675485145,0.22490419056787475,-0.17080720516189626,"GSK2110183, API-1, BAY1125976, monepantel, IPI549, BEBT-908, GDC-0084, WYE-687, CC-223, PI3Kd-IN-2"
+other_stress_survival,27,0.19231084396668893,0.2018458917318221,-0.13553826694392107,"rogaratinib, SR-1078, CK-101, MK-8617, SKLB-1028, avitinib, futibatinib, tretinoin, vadadustat, AC-261066"
+mitochondrial_oxphos_stress,4,0.18378724452053366,0.0054510837465454,-0.12331467068095786,"IACS-10759, NIM811, trifloxystrobin, MSDC-0602K"
+redox_oxidative_stress,66,0.13547382813464637,0.13726309494118394,-0.08954340585328757,"FN-1501, PF-06459988, PRN1371, sucrose, astilbin, MRX-2843, sitravatinib, zanubrutinib, BMS-986195, simurosertib"
+generic_cytotoxic,99,0.1272033988481153,0.1154615553933792,-0.0976387732825668,"CT7001, cinobufotalin, convallatoxin, LY3295668, trabectedin, BAY-1251152, BW-348U87, AZD4573, URMC-099, PTC-028"
+other_unclassified,1323,0.025007323249337268,0.026209891901907,-0.015902315969187866,"Fluticasone furoate, DHBP, WAY-316606, Zandelisib, emodepside, MK-8998, OTS514, GNE-477, betamethasone-butyrate-propionate, DpC"
+direct_lipid_axis,28,-0.014357488338672312,-0.0403826385692496,0.01060326945015585,"firsocostat, genz-123346, BW-B70C, CJ-13610, PF-429242, MK-886, olumacostat-glasaretil, A-939572, PF-4191834, ibiglustat"
+apoptosis_iap_escape,10,-0.06686377882931313,-0.21859839766392608,0.07185976860727983,"AZD5582, emricasan, alantolactone, Rentiapril - QC Failure, AT-406, SM-164, ASTX660, CCG-1423, ON-01500, UC-112"

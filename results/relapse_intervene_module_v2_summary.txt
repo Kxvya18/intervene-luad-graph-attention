@@ -1,0 +1,12 @@
+Relapse-INTERVENE module V2
+===========================
+
+This experiment keeps compact biological module tokens, then adds multitask biology, guided module edges, and clinical covariates.
+
+                       model  c_index_mean  c_index_sd  hr_mean  logrank_p_median  prior_corr_mean  edge_gain_mean  high_events_mean  low_events_mean
+module_intervene_constrained      0.676989    0.015365 4.298998          0.000037         0.639574       -0.000181              30.8              9.2
+module_intervene_edge_forced      0.676649    0.015304 4.294268          0.000037         0.639628       -0.000140              30.8              9.2
+  module_intervene_multitask      0.676581    0.015684 4.296114          0.000037         0.639454       -0.000188              30.8              9.2
+                  module_mha      0.666992    0.019949 3.916556          0.000056         0.577086       -0.001182              30.2              9.6
+          module_interleaved      0.664044    0.013236 4.036018          0.000040         0.566987       -0.000037              30.4              9.4
+   module_intervene_clinical      0.649377    0.029002 3.808329          0.001421         0.586658       -0.000461              27.2              9.4

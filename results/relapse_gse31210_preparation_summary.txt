@@ -1,0 +1,28 @@
+GSE31210 Relapse-INTERVENE preparation
+=====================================
+
+All samples: 246
+Primary tumor samples: 226
+Prognosis-included primary tumors: 204
+Samples with relapse event label: 204
+Relapse events: 54
+Samples with relapse-free months: 204
+Gene-level module expression columns: 52
+
+Module gene coverage
+--------------------
+srebp_lipid_genes_present          5
+mito_translation_genes_present    16
+oxidative_stress_genes_present     7
+apoptosis_iap_genes_present        7
+proteostasis_genes_present         8
+akt_mtor_growth_genes_present      9
+
+Initial relapse-free survival test
+----------------------------------
+               test   n  events  high_n  low_n  high_events  low_events  hazard_ratio_approx  event_fisher_p  logrank_chi2  logrank_p
+logrank high vs low 136      39      68     68           29          10             3.729564        0.000544     14.992078   0.000108
+
+Interpretation
+--------------
+This is a first transfer test using expression-derived module scores, not the final Relapse-INTERVENE AI model. If the high-state group trends toward more/earlier relapse, the next step is a survival-head model with IHA-inspired attention and clinical covariate baselines.

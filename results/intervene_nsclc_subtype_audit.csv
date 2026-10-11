@@ -1,0 +1,3 @@
+test,n,n_high,n_low,high_mean,low_mean,high_minus_low,effect_size,perm_p_two_sided,OncotreeSubtype
+cytotoxic-residual stress-survival score,15,5,5,0.5618708856614919,-0.31569447347247237,0.8775653591339643,0.8485305803600451,0.2097902097902098,Lung Squamous Cell Carcinoma
+cytotoxic-residual stress-survival score,39,13,13,0.5763111931649878,-0.2668977963778185,0.8432089895428063,0.8651850818211191,0.03796203796203796,Lung Adenocarcinoma

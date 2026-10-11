@@ -1,0 +1,90 @@
+GSE31210 Refined Mechanism Axes
+=================================
+
+Purpose: split broad proteostasis into proteasome core, ubiquitin/VCP, and UPR/chaperone axes; test MRPL21/mitochondrial translation; test combined proteasome + mito/redox relapse state.
+
+1) Axis survival ranking
+                             score   n  events  c_index  hr_high_low    logrank_p    cox_lrt_p  cox_chi2
+                            MRPL21 204      54 0.733961    20.465115 2.197557e-09 3.199129e-07 26.125608
+               proliferation_score 204      54 0.724892    13.023273 7.596484e-09 4.936325e-04 12.139566
+       proteasome_mito_redox_score 204      54 0.717978     7.522040 3.446445e-07 5.436099e-05 16.289618
+             proteasome_core_score 204      54 0.712650     8.824942 3.397804e-08 2.291832e-06 22.333420
+ proteasome_mito_redox_group_score 204      54 0.692870     6.194342 4.163653e-07 1.607979e-07 27.454937
+                             PSMA1 204      54 0.692587     6.111986 2.892311e-06 3.092815e-05 17.359909
+                             PSMB5 204      54 0.686012     3.821862 7.442481e-05 5.463830e-04 11.950310
+                  mito_redox_score 204      54 0.685105     5.677328 7.274995e-06 1.407365e-03 10.196119
+               mrpl21_resid_prolif 204      54 0.683292     7.414052 3.007711e-06 9.921120e-05 15.151657
+            mito_top_relapse_score 204      54 0.667649     5.086811 2.831653e-05 1.098816e-04 14.958847
+          upr_chaperone_axis_score 204      54 0.664702     4.782854 1.329294e-05 3.381975e-04 12.846022
+                            TXNRD1 204      54 0.661868     4.692868 1.038916e-04 1.372475e-02  6.073208
+                               VCP 204      54 0.652006     4.572184 1.519827e-05 9.611013e-03  6.705608
+             redox_buffering_score 204      54 0.647699     4.219663 1.621377e-04 9.937712e-02  2.715511
+      proteasome_core_resid_prolif 204      54 0.634890     2.568479 4.630492e-03 1.246764e-03 10.419725
+          ubiquitin_vcp_axis_score 204      54 0.620608     2.214709 2.199125e-02 5.544528e-02  3.668644
+proteasome_mito_redox_resid_prolif 204      54 0.619021     2.697215 3.329597e-03 7.509806e-03  7.146795
+   upr_chaperone_axis_resid_prolif 204      54 0.616414     3.705697 2.263255e-04 1.456995e-02  5.967739
+       mito_translation_core_score 204      54 0.614600     1.909049 6.576643e-02 9.767468e-03  6.676821
+     mito_top_relapse_resid_prolif 204      54 0.593516     1.687180 9.092079e-02 1.327900e-02  6.131556
+           mito_redox_resid_prolif 204      54 0.574473     1.283182 3.837354e-01 9.954404e-02  2.712833
+   ubiquitin_vcp_axis_resid_prolif 204      54 0.544548     1.276382 4.973678e-01 6.479322e-01  0.208517
+mito_translation_core_resid_prolif 204      54 0.516663     1.021896 9.954042e-01 4.933545e-01  0.469202
+      redox_buffering_resid_prolif 204      54 0.493652     0.854837 6.492475e-01 8.496273e-01  0.035946
+
+2) Proteasome + mito/redox combination groups
+          group  n  events  event_fraction  early_24m_events  median_rfs_months  median_proliferation  median_v3_risk
+       low_both 77       7        0.090909                 1          60.833333             -0.606014       -0.471450
+mito_redox_only 25       5        0.200000                 3          56.733333             -0.443509       -0.289969
+proteasome_only 25       8        0.320000                 4          41.866667             -0.376480       -0.069267
+      high_both 77      34        0.441558                21          48.200000              0.261793        0.384581
+
+3) Added-value tests after proliferation or proteasome
+                                                       test   n  events  base_c_index  base_plus_add_c_index  delta_c_index  lrt_p_for_added_score  lrt_chi2_for_added_score
+                     MRPL21_added_after_proliferation_score 204      54      0.724892               0.748696       0.023804               0.000099                 15.152687
+                      PSMA1_added_after_proliferation_score 204      54      0.724892               0.710837      -0.014056               0.000927                 10.968029
+      proteasome_core_score_added_after_proliferation_score 204      54      0.724892               0.720131      -0.004761               0.000993                 10.839746
+                   MRPL21_added_after_proteasome_core_score 204      54      0.712650               0.757085       0.044434               0.004204                  8.193398
+     mito_top_relapse_score_added_after_proliferation_score 204      54      0.724892               0.703695      -0.021197               0.012031                  6.306290
+proteasome_mito_redox_score_added_after_proliferation_score 204      54      0.724892               0.726366       0.001474               0.033350                  4.527740
+                      PSMB5_added_after_proliferation_score 204      54      0.724892               0.724892       0.000000               0.198307                  1.654799
+           mito_redox_score_added_after_proliferation_score 204      54      0.724892               0.725346       0.000453               0.341738                  0.903900
+      redox_buffering_score_added_after_proliferation_score 204      54      0.724892               0.703355      -0.021537               0.467726                  0.527344
+    redox_buffering_score_added_after_proteasome_core_score 204      54      0.712650               0.705509      -0.007141               0.486995                  0.483158
+         mito_redox_score_added_after_proteasome_core_score 204      54      0.712650               0.714237       0.001587               0.848356                  0.036564
+
+4) Individual gene ranking
+    gene  corr_v3  corr_v3_after_prolif_residual  c_index  resid_c_index
+   PSMA1 0.599075                       0.443776 0.692587       0.634777
+   PSMB5 0.564723                       0.316594 0.686012       0.549989
+  MRPL49 0.512318                       0.364476 0.515189       0.447518
+  MRPL21 0.489920                       0.290803 0.733961       0.683292
+   HSPA5 0.484074                       0.353729 0.660961       0.619247
+  MRPS14 0.427860                       0.268194 0.601111       0.534459
+  MRPS23 0.418059                       0.224938 0.640104       0.574700
+  MRPS34 0.418026                       0.286354 0.615167       0.567445
+  TXNRD1 0.406236                       0.225871 0.661868       0.558037
+  MRPS11 0.400172                       0.168783 0.618454       0.504421
+  MRPL10 0.397214                       0.265127 0.610973       0.548742
+  MRPL38 0.383466                       0.234972 0.666516       0.620041
+     VCP 0.365752                       0.155076 0.652006       0.554183
+  MRPS21 0.320506                       0.146426 0.570959       0.493766
+ HSP90B1 0.302918                       0.129645 0.642145       0.579120
+    GCLC 0.299583                       0.092809 0.537406       0.420540
+HSP90AA1 0.292247                       0.167343 0.600204       0.558603
+     HGS 0.280381                       0.066332 0.583088       0.503627
+  MRPL34 0.279065                       0.152337 0.610746       0.546135
+    ATF4 0.266766                       0.125104 0.566765       0.517796
+   MRPL4 0.258792                       0.102323 0.547041       0.484017
+HSP90AB1 0.226371                       0.208479 0.526298       0.521424
+   KEAP1 0.223708                       0.180654 0.535366       0.523124
+   HSPB1 0.218402                       0.173864 0.606438       0.588529
+  MRPL45 0.212613                       0.086519 0.590342       0.541941
+ SLC7A11 0.210489                       0.058734 0.548175       0.345273
+   UBAP1 0.201002                       0.103749 0.575153       0.534233
+    GCLM 0.183919                       0.070594 0.563591       0.463840
+    ATF6 0.170097                       0.113119 0.517456       0.492632
+  STAMBP 0.167613                       0.063945 0.496373       0.466107
+
+Paper interpretation guide:
+- If proteasome_core_resid_prolif is strong, the signal is not only cell-cycle/proliferation.
+- If high_both has the highest relapse fraction or earliest relapse, use this as the biological hypothesis: proteasome burden plus mito/redox adaptation marks a relapse-prone state.
+- If UPR/chaperone is weak, avoid claiming global ER stress/UPR unless literature supports it separately.

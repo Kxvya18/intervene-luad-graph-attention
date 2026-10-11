@@ -1,0 +1,12 @@
+source_token,target_token,edge,seed_count,mean_rank,best_rank,mean_attention,mean_enrichment,seeds,heads,pseudoheads,seed_fraction
+apoptosis_iap,mito_translation,apoptosis_iap->mito_translation,7,5.166666666666667,1,0.4211824138959248,0.2545157472292582,"7,17,29,43,61,83,101","0,1,2,3","0,1",1.0
+srebp_lipid,mito_translation,srebp_lipid->mito_translation,7,5.733333333333333,1,0.4031357069810231,0.2364690403143565,"7,17,29,43,61,83,101","0,1,2,3","0,1",1.0
+akt_mtor_growth,mito_translation,akt_mtor_growth->mito_translation,7,7.071428571428571,2,0.3985470810106822,0.2318804143440156,"7,17,29,43,61,83,101","0,1,2,3","0,1",1.0
+proteostasis,mito_translation,proteostasis->mito_translation,7,5.9375,1,0.3942332752048969,0.2275666085382302,"7,17,29,43,61,83,101","0,1,2,3","0,1",1.0
+apoptosis_iap,oxidative_stress,apoptosis_iap->oxidative_stress,5,6.0,1,0.3569666862487793,0.1903000195821126,"7,17,29,61,83","0,2,3","0,1",0.7142857142857143
+akt_mtor_growth,oxidative_stress,akt_mtor_growth->oxidative_stress,5,7.8,2,0.3453627169132233,0.1786960502465566,"7,17,29,61,83","0,2,3","0,1",0.7142857142857143
+srebp_lipid,oxidative_stress,srebp_lipid->oxidative_stress,5,8.0,3,0.3361027777194977,0.169436111052831,"17,29,43,61,83","2,3","0,1",0.7142857142857143
+proteostasis,oxidative_stress,proteostasis->oxidative_stress,4,7.8,5,0.3295936644077301,0.1629269977410634,"17,29,61,83","2,3","0,1",0.5714285714285714
+mito_translation,mito_translation,mito_translation->mito_translation,3,6.75,1,0.3880488276481628,0.2213821609814962,"17,43,101","2,3","0,1",0.4285714285714285
+mito_translation,oxidative_stress,mito_translation->oxidative_stress,2,10.0,10,0.3278996646404266,0.1612329979737599,"7,29","0,3",0,0.2857142857142857
+oxidative_stress,mito_translation,oxidative_stress->mito_translation,1,9.0,9,0.303751140832901,0.1370844741662343,29,0,0,0.1428571428571428

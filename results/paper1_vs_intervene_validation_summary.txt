@@ -1,0 +1,41 @@
+Paper 1 framework versus INTERVENE validation
+============================================
+
+Purpose: show that INTERVENE genuinely extends the thermodynamic framework instead of replacing it. Paper 1 gives the thermodynamic residual baseline; INTERVENE adds module tokens and IHA-inspired interleaved attention/state learning.
+
+Compact validation table
+------------------------
+                          score_label                                      test  n  n_high  n_low  high_minus_low  effect_size  perm_p_two_sided
+              Learned INTERVENE state  cytotoxic-residual stress-survival score 71      24     24        1.004702     1.004702          0.000666
+              Learned INTERVENE state         PRISM stress-survival sensitivity 71      24     24        0.145709     0.578589          0.044985
+              Learned INTERVENE state       PRISM generic cytotoxic sensitivity 71      24     24       -0.101878    -0.288733          0.340220
+              Learned INTERVENE state            PRISM direct lipid sensitivity 71      24     24        0.059762     0.390368          0.182273
+              Learned INTERVENE state SREBP x mitochondrial dependency coupling 71      24     24        0.050796     0.051156          0.857381
+              Learned INTERVENE state            KEAP1/NFE2L2 oxidative context 71      24     24        0.742158     0.742158          0.009330
+Paper 1 residual + pan-cancer penalty  cytotoxic-residual stress-survival score 71      24     24        0.803034     0.803034          0.005665
+Paper 1 residual + pan-cancer penalty         PRISM stress-survival sensitivity 71      24     24        0.057675     0.229019          0.435521
+Paper 1 residual + pan-cancer penalty       PRISM generic cytotoxic sensitivity 71      24     24       -0.208615    -0.591240          0.048650
+Paper 1 residual + pan-cancer penalty            PRISM direct lipid sensitivity 71      24     24       -0.007160    -0.046766          0.877041
+Paper 1 residual + pan-cancer penalty SREBP x mitochondrial dependency coupling 71      24     24       -0.040110    -0.040394          0.886704
+Paper 1 residual + pan-cancer penalty            KEAP1/NFE2L2 oxidative context 71      24     24       -0.078122    -0.078122          0.819727
+       Paper 1 thermodynamic residual  cytotoxic-residual stress-survival score 71      24     24        0.798917     0.798917          0.003665
+       Paper 1 thermodynamic residual         PRISM stress-survival sensitivity 71      24     24        0.109541     0.434971          0.128624
+       Paper 1 thermodynamic residual       PRISM generic cytotoxic sensitivity 71      24     24       -0.094692    -0.268369          0.367211
+       Paper 1 thermodynamic residual            PRISM direct lipid sensitivity 71      24     24       -0.003142    -0.020522          0.944019
+       Paper 1 thermodynamic residual SREBP x mitochondrial dependency coupling 71      24     24       -0.377657    -0.380332          0.177274
+       Paper 1 thermodynamic residual            KEAP1/NFE2L2 oxidative context 71      24     24        0.078122     0.078122          0.737754
+          Raw INTERVENE physics prior  cytotoxic-residual stress-survival score 71      24     24        0.976098     0.976098          0.000333
+          Raw INTERVENE physics prior         PRISM stress-survival sensitivity 71      24     24        0.141138     0.560440          0.047651
+          Raw INTERVENE physics prior       PRISM generic cytotoxic sensitivity 71      24     24       -0.099890    -0.283101          0.337221
+          Raw INTERVENE physics prior            PRISM direct lipid sensitivity 71      24     24        0.029552     0.193036          0.511496
+          Raw INTERVENE physics prior SREBP x mitochondrial dependency coupling 71      24     24       -0.054189    -0.054573          0.856048
+          Raw INTERVENE physics prior            KEAP1/NFE2L2 oxidative context 71      24     24        0.664036     0.664036          0.020327
+
+Main reading
+------------
+Paper 1 thermodynamic residual: residual stress-survival effect=0.799, p=0.0037.
+Paper 1 residual + pan-cancer penalty: residual stress-survival effect=0.803, p=0.0057.
+Raw INTERVENE physics prior: residual stress-survival effect=0.976, p=0.0003.
+Learned INTERVENE state: residual stress-survival effect=1.005, p=0.0007.
+
+Interpretation: if the learned INTERVENE state beats or sharpens the Paper 1 residual while generic cytotoxic and direct lipid controls remain weaker, then the paper can claim an extension from thermodynamic network scoring to interpretable interleaved module discovery.

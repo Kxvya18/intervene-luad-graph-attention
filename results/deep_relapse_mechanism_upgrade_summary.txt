@@ -1,0 +1,59 @@
+Deep External/Subtype Mechanism Upgrade
+========================================
+
+Question: can the relapse-associated stress-survival signal be made more universal or mechanistically sharper?
+
+1) Internal GSE31210 mechanism ranking
+  cohort                       score   n  events  c_index  hr_high_low    logrank_p    cox_lrt_p  cox_chi2
+GSE31210      proteostasis_expr_mean 204      54 0.722739     7.340881 1.040718e-07 6.278705e-06 20.401302
+GSE31210           v3_soft_mean_risk 204      54 0.700748     5.788555 5.033558e-07 4.935900e-07 25.288708
+GSE31210 raw_relapse_intervene_state 204      54 0.664589     3.729564 1.079635e-04 5.552761e-03  7.690001
+GSE31210  oxidative_stress_expr_mean 204      54 0.647699     4.219663 1.621377e-04 9.937712e-02  2.715511
+GSE31210  mito_translation_expr_mean 204      54 0.614600     1.909049 6.576643e-02 9.767468e-03  6.676821
+GSE31210     apoptosis_iap_expr_mean 204      54 0.604738     2.313173 1.071198e-02 3.838194e-02  4.288015
+GSE31210   akt_mtor_growth_expr_mean 204      54 0.576967     1.663229 1.370386e-01 3.094479e-02  4.656023
+GSE31210       srebp_lipid_expr_mean 204      54 0.541714     1.397056 2.860811e-01 4.055777e-01  0.691727
+
+2) Learned transfer model
+{'model_kind': 'ridge_projection_to_v3_soft_mean_risk', 'train_c_index': 0.7228519610065745, 'train_events': 54, 'train_n': 204, 'intercept': -1.534926138896189e-16}
+                   feature  coefficient  abs_coefficient                            model_kind
+    proteostasis_expr_mean     0.382828         0.382828 ridge_projection_to_v3_soft_mean_risk
+mito_translation_expr_mean     0.282158         0.282158 ridge_projection_to_v3_soft_mean_risk
+   apoptosis_iap_expr_mean     0.228626         0.228626 ridge_projection_to_v3_soft_mean_risk
+     srebp_lipid_expr_mean     0.200094         0.200094 ridge_projection_to_v3_soft_mean_risk
+ akt_mtor_growth_expr_mean     0.185651         0.185651 ridge_projection_to_v3_soft_mean_risk
+oxidative_stress_expr_mean     0.028957         0.028957 ridge_projection_to_v3_soft_mean_risk
+
+3) Best external/subtype signals in GSE50081
+                subgroup                      score   n  events  c_index  hr_high_low  logrank_p  cox_lrt_p  cox_chi2
+           stage_ia_only        proliferation_score  46       6 0.653659     3.593139   0.119779   0.206066  1.598854
+           stage_ia_only    apoptosis_iap_expr_mean  46       6 0.634146     1.563300   0.521476   0.381891  0.764606
+           stage_ia_only     proteostasis_expr_mean  46       6 0.609756     2.885649   0.203884   0.807310  0.059486
+           stage_ia_only oxidative_stress_expr_mean  46       6 0.609756     7.890039   0.067131   0.682670  0.167135
+           adeno_stage_i oxidative_stress_expr_mean  90      22 0.609331     2.852493   0.058682   0.329780  0.949760
+     adenocarcinoma_only        proliferation_score 125      37 0.602226     2.479099   0.036311   0.159420  1.979718
+           adeno_stage_i        proliferation_score  90      22 0.588440     2.208228   0.150009   0.332390  0.939564
+      non_adenocarcinoma     proteostasis_expr_mean  52      14 0.586466     2.150031   0.260897   0.076481  3.138143
+      non_adenocarcinoma      learned_transfer_risk  52      14 0.582707     1.324055   0.672125   0.233644  1.418537
+           stage_ia_only      fixed_intervene_state  46       6 0.580488     2.336974   0.292512   0.710133  0.138144
+           stage_ia_only      srebp_lipid_expr_mean  46       6 0.580488     1.473021   0.626468   0.287287  1.132293
+smoker_current_or_former      srebp_lipid_expr_mean 133      39 0.566400     2.036690   0.089732   0.124670  2.357646
+
+4) Direction concordance across GSE31210 and GSE50081
+          module  gse31210_c_index gse31210_direction  gse31210_p  gse50081_c_index gse50081_direction  gse50081_p  direction_concordant  external_effect_strength_abs_c_minus_0_5
+mito_translation          0.614600          risk_high    0.009767          0.470858           risk_low    0.307886                 False                                  0.029142
+   apoptosis_iap          0.604738          risk_high    0.038382          0.472917           risk_low    0.474566                 False                                  0.027083
+     srebp_lipid          0.541714          risk_high    0.405578          0.524073          risk_high    0.506502                  True                                  0.024073
+ akt_mtor_growth          0.576967          risk_high    0.030945          0.484004           risk_low    0.940642                 False                                  0.015996
+oxidative_stress          0.647699          risk_high    0.099377          0.487646           risk_low    0.760769                 False                                  0.012354
+    proteostasis          0.722739          risk_high    0.000006          0.505385          risk_high    0.920075                  True                                  0.005385
+
+5) External clinical-adjusted transfer
+                                                                   test   n  events  clinical_only_c_index  clinical_plus_score_c_index  delta_c_index  lrt_chi2_for_score  lrt_p_for_score
+GSE50081 fixed_intervene_state adjusted for age/stage/histology/smoking 177      51               0.686728                     0.687045       0.000317            0.070281         0.790928
+GSE50081 learned_transfer_risk adjusted for age/stage/histology/smoking 177      51               0.686728                     0.687045       0.000317            0.012694         0.910293
+
+Interpretation guide:
+- If a score validates only in adenocarcinoma/stage-I subsets, the claim becomes subtype-specific rather than universal.
+- If module directions disagree across cohorts, the biology may be context-dependent or the fixed transfer score may be missing cohort-specific normalization/treatment biology.
+- A breakthrough-grade claim needs repeated external agreement; a single strong internal cohort plus failed external cohort is a strong hypothesis, not proof of causation.

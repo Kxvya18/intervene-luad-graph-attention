@@ -1,0 +1,5 @@
+figure,purpose,status,source_files
+Figure 1,INTERVENE architecture,exists,figures/tcbb_figure1_intervene_architecture.svg
+Figure 2,AI ablation and sparse attention stability,exists,figures/tcbb_figure2_ai_ablation_attention.svg
+Figure 3,MRPL21/proteasome biological mechanism,exists,figures/intervene_mrpl21_proteasome_redox_biology.svg
+Figure 4,External validation/falsification,exists,figures/tcbb_figure4_external_validation_falsification.svg

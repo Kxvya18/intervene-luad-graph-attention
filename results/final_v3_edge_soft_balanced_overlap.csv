@@ -1,0 +1,10 @@
+edge,models_stable,is_biology_edge
+akt_mtor_growth -> mito_translation,2,True
+akt_mtor_growth -> srebp_lipid,2,True
+apoptosis_iap -> apoptosis_iap,2,True
+apoptosis_iap -> oxidative_stress,2,True
+apoptosis_iap -> proteostasis,2,True
+proteostasis -> oxidative_stress,2,True
+proteostasis -> proteostasis,2,True
+srebp_lipid -> mito_translation,2,True
+srebp_lipid -> srebp_lipid,2,True

@@ -1,0 +1,6 @@
+table,purpose,source_files
+Table 1,Dataset/cohort summary,final_external_dataset_scout.csv; mrpl21_external_validation.csv
+Table 2,AI ablation and benchmark,mrpl21_intervene_ai_ablation.csv; tcbb_final_classical_survival_baselines.csv; relapse_intervene_survival_model_comparison.csv
+Table 3,Robustness statistics and confidence intervals,tcbb_final_internal_score_confidence_intervals.csv; tcbb_final_external_score_confidence_intervals.csv; final_paired_bootstrap_c_index.csv; final_permutation_control.csv; final_clinical_adjusted_cox.csv
+Table 4,Attention-to-biology evidence,mrpl21_attention_to_biology_evidence.csv; final_v3_edge_top10_seed_stability.csv
+Table 5,External validation and probe audit,mrpl21_external_validation.csv; mrpl21_probe_platform_stability.csv

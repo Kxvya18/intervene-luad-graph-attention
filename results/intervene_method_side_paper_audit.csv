@@ -1,0 +1,6 @@
+method_question,status,finding,paper_use
+INTERVENE vs normal attention,done,"In supervised CV, IHA-style IBPA beats MHA for cytotoxic-residual stress-survival, but both are small-data predictors and not the headline.","Use as secondary method ablation, not as the main evidence."
+INTERVENE vs raw thermodynamic prior,done,Raw prior is strong; learned INTERVENE slightly improves residual validation and adds oxidative context.,"Shows INTERVENE extends, not replaces, the physics prior."
+INTERVENE vs no-prior model,done,No-prior model fails on residual stress-survival; weak-prior model succeeds.,Important ablation proving the physics prior is not decorative.
+different prior weights,done,Prior weight 0.05 gives the strongest residual effect; 0.22 remains strong; 0.50 over-constrains slightly.,Report as sensitivity analysis.
+pseudo-head biological edges,done,"Multi-seed testing shows recurrent edges into mitochondrial translation across all 7 seeds: SREBP/lipid, proteostasis, apoptosis/IAP, and AKT/mTOR all recur. Several oxidative-stress edges recur in 4-5 of 7 seeds.",Use recurrent edges as interpretable biological mechanism evidence; avoid over-interpreting seed-specific edges.

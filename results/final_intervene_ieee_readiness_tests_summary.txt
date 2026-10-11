@@ -1,0 +1,84 @@
+Final INTERVENE IEEE-readiness robustness tests
+==============================================
+
+Paired Bootstrap C Index
+------------------------
+                                      comparison  v3_c_index  comparator_c_index  observed_delta_c_index  bootstrap_delta_mean  bootstrap_delta_ci_low  bootstrap_delta_ci_high  bootstrap_p_delta_le_0
+            graph_sparse_v3_soft_vs_raw_transfer    0.700748            0.664589                0.036160              0.036192               -0.013801                 0.085220                0.071643
+        graph_sparse_v3_soft_vs_normal_attention    0.700748            0.693267                0.007481              0.007492               -0.019511                 0.036240                0.291236
+graph_sparse_v3_soft_vs_intervene_v2_constrained    0.700748            0.690320                0.010428              0.010275               -0.010299                 0.030275                0.150283
+graph_sparse_v3_soft_vs_graph_sparse_v3_balanced    0.700748            0.699388                0.001360              0.001261               -0.014312                 0.016089                0.419194
+
+Permutation Control
+-------------------
+ observed_c_index  perm_mean_c_index  perm_ci_low  perm_ci_high  perm_p_c_index_ge_observed  observed_logrank_p  perm_fraction_logrank_p_le_observed
+         0.700748           0.499142     0.423371      0.579347                    0.000333        5.033558e-07                             0.000333
+
+Clinical Adjusted Cox
+---------------------
+          clinical_model  n_covariates_without_v3  clinical_only_c_index  clinical_plus_v3_c_index  delta_c_index  cox_lrt_chi2_for_v3  cox_lrt_p_for_v3
+              stage_only                        2               0.620721                  0.727726       0.107005            17.417742      3.000126e-05
+               stage_age                        3               0.649173                  0.745182       0.096010            19.921131      8.070337e-06
+stage_age_smoking_driver                        9               0.661925                  0.756064       0.094140            25.686018      4.017271e-07
+
+Edge Robustness
+---------------
+                   model                                 edge  is_biology_edge  top10_seed_count
+graph_sparse_v3_balanced  akt_mtor_growth -> mito_translation             True                 5
+graph_sparse_v3_balanced       akt_mtor_growth -> srebp_lipid             True                 5
+graph_sparse_v3_balanced       apoptosis_iap -> apoptosis_iap             True                 5
+graph_sparse_v3_balanced    apoptosis_iap -> oxidative_stress             True                 5
+graph_sparse_v3_balanced        apoptosis_iap -> proteostasis             True                 5
+graph_sparse_v3_balanced     proteostasis -> oxidative_stress             True                 5
+graph_sparse_v3_balanced      srebp_lipid -> mito_translation             True                 5
+graph_sparse_v3_balanced           srebp_lipid -> srebp_lipid             True                 5
+graph_sparse_v3_balanced         proteostasis -> proteostasis             True                 4
+graph_sparse_v3_balanced   akt_mtor_growth -> akt_mtor_growth             True                 3
+graph_sparse_v3_balanced        proteostasis -> apoptosis_iap             True                 2
+graph_sparse_v3_balanced       srebp_lipid -> akt_mtor_growth             True                 1
+    graph_sparse_v3_soft  akt_mtor_growth -> mito_translation             True                 5
+    graph_sparse_v3_soft       akt_mtor_growth -> srebp_lipid             True                 5
+    graph_sparse_v3_soft    apoptosis_iap -> oxidative_stress             True                 5
+    graph_sparse_v3_soft     proteostasis -> oxidative_stress             True                 5
+    graph_sparse_v3_soft         proteostasis -> proteostasis             True                 5
+    graph_sparse_v3_soft      srebp_lipid -> mito_translation             True                 5
+    graph_sparse_v3_soft           srebp_lipid -> srebp_lipid             True                 5
+    graph_sparse_v3_soft       apoptosis_iap -> apoptosis_iap             True                 4
+    graph_sparse_v3_soft        apoptosis_iap -> proteostasis             True                 4
+    graph_sparse_v3_soft   akt_mtor_growth -> akt_mtor_growth             True                 3
+    graph_sparse_v3_soft        proteostasis -> apoptosis_iap             True                 2
+    graph_sparse_v3_soft mito_translation -> mito_translation             True                 1
+
+Random Module Negative Control
+------------------------------
+ observed_raw_transfer_c_index  random_module_mean_c_index  random_module_ci_low  random_module_ci_high  random_module_p_c_index_ge_observed
+                      0.664589                    0.565468              0.390257               0.722523                              0.14093
+
+Retrain With Module Dropped
+---------------------------
+removed_module_zeroed_before_training  mean_c_index  sd_c_index  mean_c_index_drop_vs_full  mean_hazard_ratio
+                      akt_mtor_growth      0.634731    0.026450                   0.046475           3.386416
+                         proteostasis      0.638041    0.028198                   0.043165           2.909987
+                     oxidative_stress      0.650601    0.020140                   0.030605           3.123845
+                        apoptosis_iap      0.661619    0.029962                   0.019587           4.149827
+                     mito_translation      0.671979    0.022095                   0.009227           4.802458
+                          srebp_lipid      0.689753    0.008295                  -0.008547           5.481647
+
+Drug Vulnerability Bridge
+-------------------------
+ mechanism_bucket  n_compounds  mean_sensitivity_score  median_sensitivity_score  mean_high_minus_low_lfc                                                                                                                                                     top_compounds                                                                        interpretation
+  stress_survival          110                0.221649                  0.215519                -0.158382                                  GSK3117391, CXD101, VLX1570, AZD5582, FN-1501, tucidinostat, PF-06459988, IACS-10759, EDO-S101, PRN1371, rogaratinib, GSK2110183 primary drug/vulnerability bridge; high stress-survival state is more PRISM-sensitive
+generic_cytotoxic          100                0.129189                  0.116454                -0.098931                          CT7001, cinobufotalin, convallatoxin, LY3295668, trabectedin, BAY-1251152, BW-348U87, AZD4573, URMC-099, PTC-028, peposertib, mertansine                        specificity control; less specific than stress-survival bucket
+     unclassified         1356                0.025240                  0.025800                -0.016149 Fluticasone furoate, DHBP, WAY-316606, Zandelisib, emodepside, MK-8998, OTS514, GNE-477, betamethasone-butyrate-propionate, DpC, Pemigatinib, Tepilamide fumarate                                                               background/unclassified
+direct_lipid_axis           30                0.004004                 -0.024785                 0.000200             firsocostat, genz-123346, BW-B70C, CJ-13610, ferrostatin-1, PF-429242, rosuvastatin, MK-886, olumacostat-glasaretil, A-939572, PF-4191834, ibiglustat    negative/secondary control; direct lipid drugs are weak despite SREBP/lipid signal
+
+External Dataset Scout
+----------------------
+                                dataset                                            status                                                n_or_samples                                                                               endpoint                                    platform                                                                                                               why_relevant                                                  source_url
+                               GSE50081      best immediate external validation candidate                               181 early-stage NSCLC samples                        overall survival/prognosis; not confirmed relapse-free survival             GPL570 Affymetrix U133 Plus 2.0                               early-stage resected NSCLC, independent cohort, processed data available in GEO sample table https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50081
+                               GSE68465      large external survival validation candidate                 462 lung adenocarcinoma samples in GEO page overall survival with extensive clinical annotation; recurrence endpoint not confirmed                      GPL96 Affymetrix U133A                                large multi-site blinded prognostic validation study with expression and clinical variables https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68465
+NSCLC Radiogenomics / TCIA-style cohort possible recurrence-specific validation candidate about 130 patients reported in recurrence-prediction papers                             post-surgical recurrence reported in radiogenomics studies requires separate data access/mapping check recurrence endpoint is closer to GSE31210 relapse question, but expression availability and download path must be verified                            https://arxiv.org/abs/2002.01982
+
+Interpretation
+--------------
+These tests strengthen the current single-cohort GSE31210 claim. The remaining major submission gap is true external validation. GSE50081 and GSE68465 are strong survival-validation candidates; a recurrence-specific radiogenomics cohort may be better if expression and recurrence labels can be accessed cleanly.

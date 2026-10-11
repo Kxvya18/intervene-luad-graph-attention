@@ -1,0 +1,34 @@
+Final biology validation suite
+==============================
+
+PROLIFERATION
+                                    test                             score   n  events  c_index  hazard_ratio_approx    logrank_p  high_events  low_events  cox_lrt_chi2_for_v3
+                GSE31210 V3 relapse risk                 v3_soft_mean_risk 136      42 0.700748             5.788555 5.033558e-07         34.0         8.0                  NaN
+          GSE31210 proliferation control               proliferation_score 136      35 0.724892            13.023273 7.596484e-09         32.0         3.0                  NaN
+           V3 adjusted for proliferation            v3 + proliferation Cox 204      54 0.711403                  NaN 1.034932e-04          NaN         NaN            15.071886
+V3 adjusted for clinical + proliferation v3 + clinical + proliferation Cox 204      54 0.758785                  NaN 6.536823e-05          NaN         NaN            15.940407
+
+EXTERNAL_GSE50081
+                                                    test                     score   n  events  c_index  hazard_ratio_approx  logrank_p  high_events  low_events  cox_lrt_chi2_for_state
+  GSE50081 external DFS/recurrence fixed INTERVENE state     fixed_intervene_state 118      32 0.484637             0.984029   0.909587         15.0        17.0                     NaN
+                 GSE50081 external proliferation control       proliferation_score 118      28 0.546880             1.349751   0.390946         15.0        13.0                     NaN
+     GSE50081 fixed INTERVENE adjusted for proliferation state + proliferation Cox 177      51 0.562718                  NaN   0.295190          NaN         NaN                1.095800
+GSE50081 fixed INTERVENE adjusted for clinical variables      state + clinical Cox 177      51 0.687045                  NaN   0.790787          NaN         NaN                0.070378
+
+REFINED_PRISM
+   refined_vulnerability_class  n_compounds  mean_sensitivity_score  median_sensitivity_score  mean_high_minus_low_lfc                                                                                                                   top_compounds
+proteostasis_epigenetic_stress           19                0.393519                  0.281156                -0.317824                GSK3117391, CXD101, VLX1570, tucidinostat, EDO-S101, citarinostat, geldanamycin, TC-H-106, Debio-0932, spautin-1
+             akt_mtor_survival           20                0.234656                  0.224904                -0.170807                              GSK2110183, API-1, BAY1125976, monepantel, IPI549, BEBT-908, GDC-0084, WYE-687, CC-223, PI3Kd-IN-2
+         other_stress_survival           27                0.192311                  0.201846                -0.135538                       rogaratinib, SR-1078, CK-101, MK-8617, SKLB-1028, avitinib, futibatinib, tretinoin, vadadustat, AC-261066
+   mitochondrial_oxphos_stress            4                0.183787                  0.005451                -0.123315                                                                                 IACS-10759, NIM811, trifloxystrobin, MSDC-0602K
+        redox_oxidative_stress           66                0.135474                  0.137263                -0.089543                FN-1501, PF-06459988, PRN1371, sucrose, astilbin, MRX-2843, sitravatinib, zanubrutinib, BMS-986195, simurosertib
+             generic_cytotoxic           99                0.127203                  0.115462                -0.097639                CT7001, cinobufotalin, convallatoxin, LY3295668, trabectedin, BAY-1251152, BW-348U87, AZD4573, URMC-099, PTC-028
+            other_unclassified         1323                0.025007                  0.026210                -0.015902 Fluticasone furoate, DHBP, WAY-316606, Zandelisib, emodepside, MK-8998, OTS514, GNE-477, betamethasone-butyrate-propionate, DpC
+             direct_lipid_axis           28               -0.014357                 -0.040383                 0.010603        firsocostat, genz-123346, BW-B70C, CJ-13610, PF-429242, MK-886, olumacostat-glasaretil, A-939572, PF-4191834, ibiglustat
+          apoptosis_iap_escape           10               -0.066864                 -0.218598                 0.071860                 AZD5582, emricasan, alantolactone, Rentiapril - QC Failure, AT-406, SM-164, ASTX660, CCG-1423, ON-01500, UC-112
+
+CLINICAL_ADJUSTED
+          clinical_model  n_covariates_without_v3  clinical_only_c_index  clinical_plus_v3_c_index  delta_c_index  cox_lrt_chi2_for_v3  cox_lrt_p_for_v3
+              stage_only                        2               0.620721                  0.727726       0.107005            17.417742      3.000126e-05
+               stage_age                        3               0.649173                  0.745182       0.096010            19.921131      8.070337e-06
+stage_age_smoking_driver                        9               0.661925                  0.756064       0.094140            25.686018      4.017271e-07

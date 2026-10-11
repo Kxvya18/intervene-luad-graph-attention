@@ -1,0 +1,13 @@
+attention_edge,top10_seed_count,module_removed_c_index_drop,linked_driver_genes,best_linked_gene_c_index
+akt_mtor_growth -> mito_translation,5,0.0303785989571525,MRPL49; MRPL21,0.7339605531625482
+akt_mtor_growth -> srebp_lipid,5,0.0303785989571525,,
+apoptosis_iap -> oxidative_stress,5,0.02117433688506,TXNRD1,0.6618680571299025
+proteostasis -> oxidative_stress,5,0.0419859442303332,PSMA1; PSMB5; TXNRD1; VCP,0.6925867150306053
+proteostasis -> proteostasis,5,0.0419859442303332,PSMA1; PSMB5; VCP,0.6925867150306053
+srebp_lipid -> mito_translation,5,-0.0180684652006347,MRPL49; MRPL21,0.7339605531625482
+srebp_lipid -> srebp_lipid,5,-0.0180684652006347,,
+apoptosis_iap -> apoptosis_iap,4,0.02117433688506,,
+apoptosis_iap -> proteostasis,4,0.02117433688506,PSMA1; PSMB5; VCP,0.6925867150306053
+akt_mtor_growth -> akt_mtor_growth,3,0.0303785989571525,,
+proteostasis -> apoptosis_iap,2,0.0419859442303332,PSMA1; PSMB5; VCP,0.6925867150306053
+mito_translation -> mito_translation,1,0.002765812740875,MRPL49; MRPL21,0.7339605531625482

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="650" viewBox="0 0 1080 650">
+<rect width="100%" height="100%" fill="white"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+.title { font-size: 24px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #6b7280; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #6b7280; }
+.axis { stroke: #c7cdd6; stroke-width: 1; }
+</style>
+<text x="36" y="42" class="title">Cross-Cancer Specificity Audit</text>
+<text x="36" y="66" class="subtitle">INTERVENE transfer-state association with cytotoxic-residual stress-survival PRISM response</text>
+<line x1="501.4" y1="105" x2="501.4" y2="525" stroke="#1f2933" stroke-width="1.2"/>
+<line x1="360" y1="525" x2="945" y2="525" class="axis"/>
+<line x1="501.4" y1="105" x2="501.4" y2="525" class="axis" opacity="0.45"/>
+<text x="491.4" y="549" class="small">0.0</text>
+<line x1="678.1" y1="105" x2="678.1" y2="525" class="axis" opacity="0.45"/>
+<text x="668.1" y="549" class="small">0.5</text>
+<line x1="854.9" y1="105" x2="854.9" y2="525" class="axis" opacity="0.45"/>
+<text x="844.9" y="549" class="small">1.0</text>
+<text x="36" y="123" class="label">Acute Myeloid Leukemia</text>
+<rect x="501.4" y="105" width="410.7" height="25" fill="#46785a" opacity="0.88"/>
+<text x="920.1" y="123" class="small">effect=1.162, p=0.1339, n=21</text>
+<text x="36" y="158" class="label">Non-Small Cell Lung Cancer</text>
+<rect x="501.4" y="140" width="307.7" height="25" fill="#b2382f" opacity="0.88"/>
+<text x="817.1" y="158" class="small">effect=0.871, p=0.0010, n=93</text>
+<text x="36" y="193" class="label">Invasive Breast Carcinoma</text>
+<rect x="501.4" y="175" width="278.9" height="25" fill="#46785a" opacity="0.88"/>
+<text x="788.3" y="193" class="small">effect=0.789, p=0.1029, n=31</text>
+<text x="36" y="228" class="label">Esophagogastric Adenocarcinoma</text>
+<rect x="501.4" y="210" width="245.8" height="25" fill="#46785a" opacity="0.88"/>
+<text x="755.2" y="228" class="small">effect=0.695, p=0.1079, n=32</text>
+<text x="36" y="263" class="label">Mature B-Cell Neoplasms</text>
+<rect x="501.4" y="245" width="239.4" height="25" fill="#46785a" opacity="0.88"/>
+<text x="748.8" y="263" class="small">effect=0.677, p=0.0070, n=45</text>
+<text x="36" y="298" class="label">Renal Cell Carcinoma</text>
+<rect x="501.4" y="280" width="122.8" height="25" fill="#46785a" opacity="0.88"/>
+<text x="632.2" y="298" class="small">effect=0.347, p=0.4565, n=22</text>
+<text x="36" y="333" class="label">Melanoma</text>
+<rect x="501.4" y="315" width="76.0" height="25" fill="#46785a" opacity="0.88"/>
+<text x="585.4" y="333" class="small">effect=0.215, p=0.5944, n=45</text>
+<text x="36" y="368" class="label">Endometrial Carcinoma</text>
+<rect x="501.4" y="350" width="50.8" height="25" fill="#46785a" opacity="0.88"/>
+<text x="560.2" y="368" class="small">effect=0.144, p=0.6763, n=28</text>
+<text x="36" y="403" class="label">Lung Neuroendocrine Tumor</text>
+<rect x="501.4" y="385" width="32.8" height="25" fill="#46785a" opacity="0.88"/>
+<text x="542.2" y="403" class="small">effect=0.093, p=0.7263, n=22</text>
+<text x="36" y="438" class="label">Colorectal Adenocarcinoma</text>
+<rect x="501.4" y="420" width="2.3" height="25" fill="#46785a" opacity="0.88"/>
+<text x="511.7" y="438" class="small">effect=0.006, p=0.9850, n=43</text>
+<text x="36" y="473" class="label">Head and Neck Squamous Cell Carcinoma</text>
+<rect x="491.3" y="455" width="10.1" height="25" fill="#46785a" opacity="0.88"/>
+<text x="509.4" y="473" class="small">effect=-0.029, p=0.9261, n=43</text>
+<text x="36" y="508" class="label">Diffuse Glioma</text>
+<rect x="467.8" y="490" width="33.6" height="25" fill="#46785a" opacity="0.88"/>
+<text x="509.4" y="508" class="small">effect=-0.095, p=0.7483, n=51</text>
+<text x="360" y="578" class="small">NSCLC is retained as the main context because it has strong residual validation and weak generic/direct-lipid confounding.</text>
+<text x="360" y="600" class="small">Other positive lineages are future validation directions, not current main claims.</text>
+</svg>

@@ -1,0 +1,5 @@
+dataset_question,status,finding
+other cancer types in DepMap,done,NSCLC ranks 2nd of 17 by residual stress-survival transfer effect; mature B-cell neoplasms are also significant and should be future validation.
+NSCLC subtypes only,done_now,Subtype-level high-low audit generated; interpret cautiously because subtype sample sizes are smaller.
+PRISM secondary screen,partial,Current PRISM validation uses 24Q2 collapsed repurposing LFC with screen labels aggregated. A screen-separated REP1M/REP300-style analysis is still needed if the teacher wants primary-vs-secondary screen claims.
+GDSC/CTRP external validation,not_done,"No GDSC/CTRP files are currently in the project. This is the next external validation step, not part of the current DepMap-only evidence."

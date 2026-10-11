@@ -1,0 +1,2 @@
+observed_c_index,perm_mean_c_index,perm_ci_low,perm_ci_high,perm_p_c_index_ge_observed,observed_logrank_p,perm_fraction_logrank_p_le_observed
+0.7007481296758105,0.4991424846973475,0.42337055089548853,0.5793470868283835,0.0003332222592469177,5.033557527752069e-07,0.0003332222592469177

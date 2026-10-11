@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720"><rect width="100%" height="100%" fill="#ffffff"/><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6670"/></marker></defs>
+<text x="42" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1b1b1b" text-anchor="start">Figure 4. External validation and falsification</text>
+<text x="42" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#5d6670" text-anchor="start">External cohorts support a method-led claim, not a universal MRPL21 proof.</text>
+<line x1="82" y1="510" x2="1062" y2="510" stroke="#1b1b1b"/>
+<line x1="82" y1="150" x2="82" y2="510" stroke="#1b1b1b"/>
+<line x1="77" y1="510.0" x2="1062" y2="510.0" stroke="#eef1f4"/>
+<text x="70" y="514.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#5d6670" text-anchor="end">0.50</text>
+<line x1="77" y1="428.18181818181813" x2="1062" y2="428.18181818181813" stroke="#eef1f4"/>
+<text x="70" y="432.18181818181813" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#5d6670" text-anchor="end">0.55</text>
+<line x1="77" y1="346.3636363636364" x2="1062" y2="346.3636363636364" stroke="#eef1f4"/>
+<text x="70" y="350.3636363636364" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#5d6670" text-anchor="end">0.60</text>
+<line x1="77" y1="264.5454545454545" x2="1062" y2="264.5454545454545" stroke="#eef1f4"/>
+<text x="70" y="268.5454545454545" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#5d6670" text-anchor="end">0.65</text>
+<line x1="77" y1="182.7272727272728" x2="1062" y2="182.7272727272728" stroke="#eef1f4"/>
+<text x="70" y="186.7272727272728" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#5d6670" text-anchor="end">0.70</text>
+<text x="30" y="330" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="middle">C-index</text>
+<rect x="82" y="560" width="18" height="18" fill="#2f6db3"/>
+<text x="108" y="574" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">MRPL21</text>
+<rect x="302" y="560" width="18" height="18" fill="#6f5aa7"/>
+<text x="328" y="574" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">intervene refined gene score</text>
+<rect x="522" y="560" width="18" height="18" fill="#0f8b8d"/>
+<text x="548" y="574" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">mrpl21 proteasome score</text>
+<rect x="742" y="560" width="18" height="18" fill="#c94736"/>
+<text x="768" y="574" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">proliferation score</text>
+<rect x="962" y="560" width="18" height="18" fill="#d98b28"/>
+<text x="988" y="574" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">proteasome core score</text>
+<text x="245.33333333333334" y="546" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1b1b1b" text-anchor="middle">GSE30219</text>
+<rect x="120.0" y="215.16743673985974" width="28" height="294.83256326014026" fill="#c94736" opacity="0.9"/>
+<line x1="134.0" y1="149.21935218310773" x2="134.0" y2="273.06483140322223" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="162.0" y="319.4003831583692" width="28" height="190.59961684163082" fill="#6f5aa7" opacity="0.9"/>
+<line x1="176.0" y1="238.9645941524676" x2="176.0" y2="401.62082332284933" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="204.0" y="340.3874060525152" width="28" height="169.61259394748484" fill="#0f8b8d" opacity="0.9"/>
+<line x1="218.0" y1="271.7775601607293" x2="218.0" y2="423.2443127597948" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="246.0" y="341.5576861395495" width="28" height="168.4423138604505" fill="#2f6db3" opacity="0.9"/>
+<line x1="260.0" y1="254.24069482182955" x2="260.0" y2="437.71647372337395" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="288.0" y="363.9490451381363" width="28" height="146.0509548618637" fill="#d98b28" opacity="0.9"/>
+<line x1="302.0" y1="294.04326081178573" x2="302.0" y2="452.2234868618292" stroke="#1b1b1b" stroke-width="1"/>
+<text x="572.0" y="546" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1b1b1b" text-anchor="middle">GSE37745</text>
+<rect x="446.6666666666667" y="337.54287868316896" width="28" height="172.45712131683106" fill="#c94736" opacity="0.9"/>
+<line x1="460.6666666666667" y1="218.52629838050444" x2="460.6666666666667" y2="469.77506627163575" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="488.6666666666667" y="385.60469937802344" width="28" height="124.39530062197655" fill="#2f6db3" opacity="0.9"/>
+<line x1="502.6666666666667" y1="225.62518329588272" x2="502.6666666666667" y2="532.8512114530373" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="530.6666666666667" y="403.6985612866746" width="28" height="106.30143871332542" fill="#0f8b8d" opacity="0.9"/>
+<line x1="544.6666666666667" y1="233.39378989479513" x2="544.6666666666667" y2="546.5342027790322" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="572.6666666666667" y="423.4887227492618" width="28" height="86.51127725073819" fill="#6f5aa7" opacity="0.9"/>
+<line x1="586.6666666666667" y1="242.99298913464622" x2="586.6666666666667" y2="603.9262325959032" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="614.6666666666667" y="493.60243764528485" width="28" height="16.397562354715173" fill="#d98b28" opacity="0.9"/>
+<line x1="628.6666666666667" y1="292.8719501369523" x2="628.6666666666667" y2="648.7628389890269" stroke="#1b1b1b" stroke-width="1"/>
+<text x="898.6666666666667" y="546" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1b1b1b" text-anchor="middle">GSE68465</text>
+<rect x="773.3333333333334" y="329.6293027360988" width="28" height="180.3706972639012" fill="#c94736" opacity="0.9"/>
+<line x1="787.3333333333334" y1="263.56599221153175" x2="787.3333333333334" y2="406.58847465559467" stroke="#1b1b1b" stroke-width="1"/>
+<rect x="815.3333333333334" y="399.82877316857906" width="28" height="110.17122683142095" fill="#d98b28" opacity="0.9"/>
+<line x1="829.3333333333334" y1="318.51847740286513" x2="829.3333333333334" y2="471.08807482036826" stroke="#1b1b1b" stroke-width="1"/>
+<text x="82" y="620" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">Takeaway: GSE30219 supports MRPL21/refined stress-survival scores, GSE37745 is weak, and GSE68465 mainly shows</text>
+<text x="82" y="641" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">proliferation because MRPL21 is absent in the current GPL96 mapping. This is evidence for a falsifiable</text>
+<text x="82" y="662" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">computational discovery framework, not final causal proof.</text>
+</svg>

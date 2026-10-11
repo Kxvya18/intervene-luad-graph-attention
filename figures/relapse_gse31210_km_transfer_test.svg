@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="580" viewBox="0 0 880 580">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933}.title{font-size:23px;font-weight:700}.small{font-size:12px;fill:#5b6573}.label{font-size:13px}.axis{stroke:#c7cdd6;stroke-width:1}</style>
+<text x="36" y="42" class="title">GSE31210 Relapse Transfer Test</text>
+<text x="36" y="66" class="small">Raw Relapse-INTERVENE state from transferred stress-survival modules; high vs low tertile</text>
+<line x1="95" y1="455" x2="775" y2="455" class="axis"/>
+<line x1="95" y1="95" x2="95" y2="455" class="axis"/>
+<line x1="95" y1="95.0" x2="775" y2="95.0" class="axis" opacity="0.35"/>
+<text x="48" y="99.0" class="small">1.00</text>
+<line x1="95" y1="185.0" x2="775" y2="185.0" class="axis" opacity="0.35"/>
+<text x="48" y="189.0" class="small">0.75</text>
+<line x1="95" y1="275.0" x2="775" y2="275.0" class="axis" opacity="0.35"/>
+<text x="48" y="279.0" class="small">0.50</text>
+<line x1="95" y1="365.0" x2="775" y2="365.0" class="axis" opacity="0.35"/>
+<text x="48" y="369.0" class="small">0.25</text>
+<line x1="95" y1="455.0" x2="775" y2="455.0" class="axis" opacity="0.35"/>
+<text x="48" y="459.0" class="small">0.00</text>
+<line x1="95.0" y1="95" x2="95.0" y2="455" class="axis" opacity="0.25"/>
+<text x="85.0" y="479" class="small">0</text>
+<line x1="236.3" y1="95" x2="236.3" y2="455" class="axis" opacity="0.25"/>
+<text x="226.3" y="479" class="small">24</text>
+<line x1="377.5" y1="95" x2="377.5" y2="455" class="axis" opacity="0.25"/>
+<text x="367.5" y="479" class="small">48</text>
+<line x1="518.8" y1="95" x2="518.8" y2="455" class="axis" opacity="0.25"/>
+<text x="508.8" y="479" class="small">72</text>
+<line x1="660.0" y1="95" x2="660.0" y2="455" class="axis" opacity="0.25"/>
+<text x="650.0" y="479" class="small">96</text>
+<path d="M 95.0 95.0 L 210.2 95.0 L 210.2 100.4 L 236.8 100.4 L 236.8 105.7 L 246.5 105.7 L 246.5 111.1 L 248.0 111.1 L 248.0 116.6 L 258.2 116.6 L 258.2 122.2 L 300.4 122.2 L 300.4 128.1 L 315.9 128.1 L 315.9 134.0 L 346.3 134.0 L 346.3 140.3 L 367.1 140.3 L 367.1 147.0 L 416.4 147.0 L 416.4 155.1" fill="none" stroke="#2e6f9e" stroke-width="3"/>
+<path d="M 95.0 95.0 L 106.2 95.0 L 106.2 100.3 L 114.4 100.3 L 114.4 105.6 L 144.0 105.6 L 144.0 110.9 L 144.6 110.9 L 144.6 116.2 L 145.6 116.2 L 145.6 121.5 L 153.3 121.5 L 153.3 126.9 L 156.4 126.9 L 156.4 132.2 L 161.9 132.2 L 161.9 137.7 L 170.3 137.7 L 170.3 143.2 L 180.9 143.2 L 180.9 148.6 L 185.4 148.6 L 185.4 154.1 L 185.8 154.1 L 185.8 159.6 L 192.1 159.6 L 192.1 165.1 L 195.5 165.1 L 195.5 170.5 L 200.6 170.5 L 200.6 176.0 L 200.9 176.0 L 200.9 181.5 L 202.3 181.5 L 202.3 186.9 L 210.8 186.9 L 210.8 192.4 L 217.0 192.4 L 217.0 197.9 L 218.8 197.9 L 218.8 203.3 L 254.5 203.3 L 254.5 209.1 L 256.9 209.1 L 256.9 214.8 L 263.9 214.8 L 263.9 220.5 L 290.6 220.5 L 290.6 226.4 L 301.4 226.4 L 301.4 232.4 L 319.4 232.4 L 319.4 238.4 L 381.8 238.4 L 381.8 245.0 L 429.7 245.0 L 429.7 252.7 L 433.4 252.7 L 433.4 260.5" fill="none" stroke="#b2382f" stroke-width="3"/>
+<text x="795" y="120" class="label" fill="#b2382f">High state</text>
+<rect x="775" y="111" width="14" height="4" fill="#b2382f"/>
+<text x="795" y="145" class="label" fill="#2e6f9e">Low state</text>
+<rect x="775" y="136" width="14" height="4" fill="#2e6f9e"/>
+<text x="95" y="505" class="label">High: 29/68 relapsed; Low: 10/68 relapsed</text>
+<text x="95" y="530" class="label">Approx HR=3.73; log-rank p=0.000108; event Fisher p=0.0005436</text>
+<text x="95" y="555" class="small">Exploratory transfer test only; next step is a survival-head Relapse-INTERVENE model with baseline comparisons.</text>
+</svg>

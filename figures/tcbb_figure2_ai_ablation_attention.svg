@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700"><rect width="100%" height="100%" fill="#ffffff"/><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6670"/></marker></defs>
+<text x="42" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1b1b1b" text-anchor="start">Figure 2. AI ablation and interpretability evidence</text>
+<text x="42" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#5d6670" text-anchor="start">INTERVENE is evaluated as both a survival model and a mechanism extraction engine.</text>
+<text x="42" y="122" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1b1b1b" text-anchor="start">A. Survival ablation (C-index)</text>
+<text x="42" y="168.52363636363637" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">MRPL21 + proteasome-core + proliferation</text>
+<rect x="332" y="150.0" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="150.0" width="242.3305372931308" height="25.727272727272727" fill="#2f6db3"/>
+<text x="584.3305372931308" y="168.52363636363637" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.761</text>
+<text x="42" y="202.2509090909091" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">INTERVENE-refined genes MRPL21+PSMA1+PSMB5+T</text>
+<rect x="332" y="183.72727272727272" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="183.72727272727272" width="238.92994785762855" height="25.727272727272727" fill="#2f6db3"/>
+<text x="580.9299478576286" y="202.2509090909091" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.759</text>
+<text x="42" y="235.9781818181818" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">MRPL21 + proteasome-core manual/extracted</text>
+<rect x="332" y="217.45454545454544" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="217.45454545454544" width="231.67535706189076" height="25.727272727272727" fill="#2f6db3"/>
+<text x="573.6753570618907" y="235.9781818181818" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.756</text>
+<text x="42" y="269.70545454545453" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">INTERVENE V3 OOF mean risk</text>
+<rect x="332" y="251.1818181818182" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="251.1818181818182" width="121.49625935162089" height="25.727272727272727" fill="#2f6db3"/>
+<text x="463.4962593516209" y="269.70545454545453" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.701</text>
+<text x="42" y="303.4327272727272" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">MRPL21 + proteasome-core residualized for pr</text>
+<rect x="332" y="284.9090909090909" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="284.9090909090909" width="119.22919972795286" height="25.727272727272727" fill="#2f6db3"/>
+<text x="461.22919972795285" y="303.4327272727272" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.700</text>
+<text x="42" y="337.15999999999997" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">raw module score</text>
+<rect x="332" y="318.6363636363636" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="318.6363636363636" width="111.97460893221489" height="25.727272727272727" fill="#2f6db3"/>
+<text x="453.9746089322149" y="337.15999999999997" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.696</text>
+<text x="42" y="370.8872727272727" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">INTERVENE-refined genes residualized for pro</text>
+<rect x="332" y="352.3636363636364" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="352.3636363636364" width="103.81319428700974" height="25.727272727272727" fill="#2f6db3"/>
+<text x="445.81319428700976" y="370.8872727272727" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.692</text>
+<text x="42" y="404.61454545454546" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">GraphSparse INTERVENE V3</text>
+<rect x="332" y="386.0909090909091" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="386.0909090909091" width="82.41215143958279" height="25.727272727272727" fill="#2f6db3"/>
+<text x="424.4121514395828" y="404.61454545454546" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.681</text>
+<text x="42" y="438.34181818181816" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">normal MHA</text>
+<rect x="332" y="419.8181818181818" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="419.8181818181818" width="54.16458852867833" height="25.727272727272727" fill="#2f6db3"/>
+<text x="396.16458852867834" y="438.34181818181816" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.667</text>
+<text x="42" y="472.0690909090909" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">raw module prior</text>
+<rect x="332" y="453.54545454545456" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="453.54545454545456" width="49.17705735660837" height="25.727272727272727" fill="#2f6db3"/>
+<text x="391.1770573566084" y="472.0690909090909" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.665</text>
+<text x="42" y="505.7963636363636" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#1b1b1b" text-anchor="start">no-prior IHA-style attention</text>
+<rect x="332" y="487.27272727272725" width="280" height="25.727272727272727" fill="#edf1f5"/>
+<rect x="332" y="487.27272727272725" width="43.645431874858026" height="25.727272727272727" fill="#2f6db3"/>
+<text x="385.64543187485805" y="505.7963636363636" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1b1b1b" text-anchor="start">0.662</text>
+<text x="650" y="122" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1b1b1b" text-anchor="start">B. Stable sparse attention edges</text>
+<rect x="650" y="136" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="154" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">akt_mtor_growth -&gt; mito_translation</text>
+<rect x="1055" y="136" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="136" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="154" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="172" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="190" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">akt_mtor_growth -&gt; srebp_lipid</text>
+<rect x="1055" y="172" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="172" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="190" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="208" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="226" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">apoptosis_iap -&gt; oxidative_stress</text>
+<rect x="1055" y="208" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="208" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="226" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="244" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="262" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">proteostasis -&gt; oxidative_stress</text>
+<rect x="1055" y="244" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="244" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="262" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="280" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="298" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">proteostasis -&gt; proteostasis</text>
+<rect x="1055" y="280" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="280" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="298" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="316" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="334" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">srebp_lipid -&gt; mito_translation</text>
+<rect x="1055" y="316" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="316" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="334" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="352" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">srebp_lipid -&gt; srebp_lipid</text>
+<rect x="1055" y="352" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="352" width="120.0" height="26" fill="#438b4a"/>
+<text x="1184" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">5/5</text>
+<rect x="650" y="388" width="390" height="26" fill="#f7f9fb" stroke="#e0e5ea"/>
+<text x="662" y="406" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1b1b1b" text-anchor="start">apoptosis_iap -&gt; apoptosis_iap</text>
+<rect x="1055" y="388" width="120" height="26" fill="#edf1f5"/>
+<rect x="1055" y="388" width="96.0" height="26" fill="#d98b28"/>
+<text x="1184" y="406" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1b1b1b" text-anchor="start">4/5</text>
+<text x="650" y="480" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1b1b1b" text-anchor="start">C. Module removal importance</text>
+<rect x="650" y="515.9514849240536" width="48" height="94.04851507594637" fill="#c94736"/>
+<text x="674" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">proteostasis</text>
+<text x="674" y="505.9514849240536" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.042</text>
+<rect x="738" y="531.9986397642259" width="48" height="78.00136023577407" fill="#c94736"/>
+<text x="762" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">oxidative str</text>
+<text x="762" y="521.9986397642259" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.035</text>
+<rect x="826" y="541.9519383359784" width="48" height="68.04806166402159" fill="#0f8b8d"/>
+<text x="850" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">akt mtor grow</text>
+<text x="850" y="531.9519383359784" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.030</text>
+<rect x="914" y="562.5694853774656" width="48" height="47.430514622534396" fill="#0f8b8d"/>
+<text x="938" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">apoptosis iap</text>
+<text x="938" y="552.5694853774656" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.021</text>
+<rect x="1002" y="603.80457946044" width="48" height="6.19542053956" fill="#0f8b8d"/>
+<text x="1026" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">mito translat</text>
+<text x="1026" y="593.80457946044" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.003</text>
+<rect x="1090" y="610.0" width="48" height="0.0" fill="#0f8b8d"/>
+<text x="1114" y="628" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#1b1b1b" text-anchor="middle">srebp lipid</text>
+<text x="1114" y="600.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#1b1b1b" text-anchor="middle">0.000</text>
+<text x="42" y="535" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">Interpretation: V3 does not dominate all classical scores, but it finds</text>
+<text x="42" y="556" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">stable biology-guided couplings. The extracted MRPL21/proteasome/redox</text>
+<text x="42" y="577" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#1b1b1b" text-anchor="start">gene axis is the strongest compact signal.</text>
+</svg>

@@ -1,0 +1,21 @@
+Relapse-INTERVENE V2: gene-token + clinical + constrained biology
+=================================================================
+
+Patients: 204
+Gene tokens: 52
+Clinical covariates after encoding: 18
+Evaluation: five-fold out-of-fold survival prediction over five seeds.
+
+Aggregate model comparison
+--------------------------
+                                model  c_index_mean  c_index_sd  hr_mean  logrank_p_median  prior_corr_mean  edge_gain_mean  high_events_mean  low_events_mean
+            relapse_intervene_gene_v2      0.591646    0.048973 1.851900          0.103763         0.321334       -0.000025              23.5             15.0
+relapse_intervene_gene_v2_edge_strong      0.591022    0.050336 1.917438          0.101452         0.322312       -0.000025              24.0             15.0
+                    gene_mha_clinical      0.576683    0.021882 1.843210          0.100294         0.257273       -0.000053              23.0             15.0
+            gene_interleaved_clinical      0.565858    0.021160 1.667957          0.134588         0.151910       -0.000024              21.5             15.0
+           clinical_plus_raw_transfer      0.553786    0.029897 1.479563          0.229692         0.261981             NaN              23.5             17.0
+                    clinical_only_cox      0.547212    0.093859 1.640948          0.276496         0.077899             NaN              21.5             16.5
+
+Interpretation
+--------------
+This V2 experiment tests whether richer gene-level tokens, clinical adjustment, multitask supervision, and biology-guided attention make the AI component stronger. The strongest model should ideally improve C-index while also increasing biology-edge attention gain. If edge gain improves without C-index improving, the constrained model is more interpretable but not more predictive.

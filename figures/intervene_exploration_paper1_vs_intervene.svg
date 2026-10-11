@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+<rect width="100%" height="100%" fill="white"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+.title { font-size: 24px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #6b7280; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #6b7280; }
+.axis { stroke: #c7cdd6; stroke-width: 1; }
+</style>
+<text x="36" y="42" class="title">INTERVENE Sharpens The Original Thermodynamic Signal</text>
+<text x="36" y="66" class="subtitle">High-vs-low score difference for PRISM cytotoxic-residual stress-survival response in NSCLC</text>
+<line x1="285" y1="435" x2="845" y2="435" class="axis"/>
+<line x1="285.0" y1="105" x2="285.0" y2="435" class="axis" opacity="0.45"/>
+<text x="277.0" y="459" class="small">0</text>
+<line x1="406.7" y1="105" x2="406.7" y2="435" class="axis" opacity="0.45"/>
+<text x="398.7" y="459" class="small">0.25</text>
+<line x1="528.5" y1="105" x2="528.5" y2="435" class="axis" opacity="0.45"/>
+<text x="520.5" y="459" class="small">0.5</text>
+<line x1="650.2" y1="105" x2="650.2" y2="435" class="axis" opacity="0.45"/>
+<text x="642.2" y="459" class="small">0.75</text>
+<line x1="772.0" y1="105" x2="772.0" y2="435" class="axis" opacity="0.45"/>
+<text x="764.0" y="459" class="small">1</text>
+<text x="36" y="148" class="label">Paper 1 thermodynamic residual</text>
+<rect x="285" y="117" width="389.0" height="48" fill="#2e6f9e" opacity="0.88"/>
+<text x="684.0" y="147" class="label">0.799, p=0.0037</text>
+<text x="36" y="227" class="label">Paper 1 residual + pan-cancer penalty</text>
+<rect x="285" y="196" width="391.0" height="48" fill="#2e6f9e" opacity="0.88"/>
+<text x="686.0" y="226" class="label">0.803, p=0.0057</text>
+<text x="36" y="306" class="label">Raw INTERVENE physics prior</text>
+<rect x="285" y="275" width="475.3" height="48" fill="#2e6f9e" opacity="0.88"/>
+<text x="770.3" y="305" class="label">0.976, p=0.0003</text>
+<text x="36" y="385" class="label">Learned INTERVENE state</text>
+<rect x="285" y="354" width="489.2" height="48" fill="#b2382f" opacity="0.88"/>
+<text x="784.2" y="384" class="label">1.005, p=0.0007</text>
+<text x="285" y="502" class="small">Interpretation: Paper 1 finds the residual vulnerability; INTERVENE keeps it and increases the validated residual effect.</text>
+</svg>

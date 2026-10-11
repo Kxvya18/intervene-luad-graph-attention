@@ -1,0 +1,112 @@
+NSCLC multi-omics SREBP/lipid axis analysis
+===========================================
+
+Mutation-context shifts in SREBP axis
+-------------------------------------
+marker               flag                  axis  n_mut  n_wt  mean_mut   mean_wt  difference_mut_minus_wt                    note
+  EGFR           EGFR_mut srebp_axis_integrated     13    85  0.440252 -0.084010                 0.524262                      ok
+NFE2L2 NFE2L2_high_impact srebp_axis_integrated      4    94  0.228740 -0.022862                 0.251602                      ok
+ KEAP1  KEAP1_high_impact srebp_axis_integrated     11    87  0.138114 -0.031962                 0.170075                      ok
+ KEAP1  KEAP1_high_impact        srebp_axis_dep     11    87  0.801657  0.694470                 0.107187                      ok
+NFE2L2 NFE2L2_high_impact        srebp_axis_dep      4    94  0.804259  0.702342                 0.101917                      ok
+NFE2L2         NFE2L2_mut srebp_axis_integrated      6    92  0.042920 -0.015989                 0.058909                      ok
+NFE2L2         NFE2L2_mut        srebp_axis_dep      6    92  0.699639  0.706949                -0.007310                      ok
+ KEAP1          KEAP1_mut        srebp_axis_dep     27    71  0.697672  0.709859                -0.012187                      ok
+ STK11  STK11_high_impact        srebp_axis_dep     22    76  0.678954  0.714476                -0.035522                      ok
+ STK11          STK11_mut        srebp_axis_dep     22    76  0.678954  0.714476                -0.035522                      ok
+  EGFR           EGFR_mut        srebp_axis_dep     13    85  0.671977  0.711782                -0.039805                      ok
+  TP53           TP53_mut srebp_axis_integrated     82    16 -0.019960  0.025710                -0.045670                      ok
+  TP53           TP53_mut        srebp_axis_dep     82    16  0.696415  0.758197                -0.061782                      ok
+  TP53   TP53_high_impact        srebp_axis_dep     80    18  0.694409  0.760246                -0.065837                      ok
+  KRAS           KRAS_mut        srebp_axis_dep     36    62  0.642301  0.743780                -0.101479                      ok
+  KRAS   KRAS_high_impact        srebp_axis_dep     36    62  0.642301  0.743780                -0.101479                      ok
+ KEAP1          KEAP1_mut srebp_axis_integrated     27    71 -0.108402  0.025902                -0.134304                      ok
+ STK11  STK11_high_impact srebp_axis_integrated     22    76 -0.118698  0.016113                -0.134811                      ok
+ STK11          STK11_mut srebp_axis_integrated     22    76 -0.118698  0.016113                -0.134811                      ok
+  KRAS           KRAS_mut srebp_axis_integrated     36    62 -0.184414  0.092769                -0.277183                      ok
+  KRAS   KRAS_high_impact srebp_axis_integrated     36    62 -0.184414  0.092769                -0.277183                      ok
+  TP53   TP53_high_impact srebp_axis_integrated     80    18 -0.074075  0.252127                -0.326202                      ok
+  EGFR   EGFR_high_impact        srebp_axis_dep      1    97       NaN       NaN                      NaN insufficient group size
+  EGFR   EGFR_high_impact srebp_axis_integrated      1    97       NaN       NaN                      NaN insufficient group size
+
+Gene-level dependency/expression/copy-number coupling
+----------------------------------------------------
+gene_symbol  mean_dependency  mean_expression  mean_copy_number  corr_dep_expr  corr_dep_cn  corr_expr_cn  corr_dep_with_srebp_integrated
+       SCAP         1.107101         4.597610          0.851640      -0.151228    -0.141477      0.480540                        0.540246
+        SCD         0.892133         6.950711          0.994860       0.323046     0.053198      0.233734                        0.496415
+     MBTPS1         0.642080         5.645102          1.130079       0.035842    -0.032101      0.530451                        0.469772
+     MBTPS2         0.471273         3.817234          0.658960       0.029929    -0.071178      0.654742                        0.418258
+     SREBF1         0.419921         6.104248          1.025744       0.186572    -0.064903      0.177966                        0.347715
+       UXS1         0.488532         5.484731          1.094848       0.039920     0.055070      0.345113                        0.122982
+     PTDSS1         0.327374         6.295869          1.213882      -0.093394    -0.149337      0.447708                        0.116255
+        PGD         1.012068         7.154402          0.913352       0.241183     0.258780      0.037490                        0.086976
+    SMARCA2         0.172522         4.108060          0.871742      -0.053427     0.091151      0.426445                        0.065536
+     NFE2L2         0.444466         6.030594          1.106464       0.059637     0.097826      0.409155                        0.045739
+     UBIAD1         0.689474         3.534528          0.915702       0.061513     0.047034      0.489194                       -0.062787
+       KRAS         0.775387         4.124126          1.574396       0.421990     0.245443      0.681312                       -0.095575
+      CFLAR         0.782733         5.358209          1.114816       0.259081     0.044692      0.421279                       -0.106481
+      TRPM7         0.903411         3.984389          1.057020      -0.040060    -0.011749      0.439994                       -0.200154
+
+Top candidate multi-omics mutation shifts
+-----------------------------------------
+marker               flag gene_symbol measure  n_mut  n_wt  mean_mut  mean_wt  difference_mut_minus_wt
+ KEAP1          KEAP1_mut         PGD    expr     27    71  8.308456 6.696175                 1.612282
+ KEAP1  KEAP1_high_impact         PGD    expr     11    87  8.555777 6.970889                 1.584888
+  KRAS           KRAS_mut        KRAS      cn     36    62  2.204712 1.208406                 0.996306
+  KRAS   KRAS_high_impact        KRAS      cn     36    62  2.204712 1.208406                 0.996306
+  KRAS           KRAS_mut        KRAS     dep     36    62  1.383004 0.422577                 0.960426
+  KRAS   KRAS_high_impact        KRAS     dep     36    62  1.383004 0.422577                 0.960426
+ STK11  STK11_high_impact         PGD    expr     22    76  7.742471 6.997584                 0.744887
+ STK11          STK11_mut         PGD    expr     22    76  7.742471 6.997584                 0.744887
+  KRAS           KRAS_mut        KRAS    expr     36    62  4.510652 3.888280                 0.622372
+  KRAS   KRAS_high_impact        KRAS    expr     36    62  4.510652 3.888280                 0.622372
+NFE2L2 NFE2L2_high_impact      NFE2L2     dep      4    94  1.035931 0.419298                 0.616633
+ KEAP1  KEAP1_high_impact      NFE2L2     dep     11    87  0.919883 0.384356                 0.535527
+NFE2L2         NFE2L2_mut     SMARCA2    expr      6    92  4.606917 4.074429                 0.532489
+NFE2L2 NFE2L2_high_impact      PTDSS1    expr      4    94  6.764623 6.275265                 0.489358
+ KEAP1          KEAP1_mut      NFE2L2     dep     27    71  0.794376 0.311402                 0.482973
+ KEAP1  KEAP1_high_impact        UXS1     dep     11    87  0.913497 0.434800                 0.478696
+NFE2L2         NFE2L2_mut      PTDSS1    expr      6    92  6.736317 6.266176                 0.470141
+ STK11  STK11_high_impact      SREBF1    expr     22    76  6.467063 6.007497                 0.459566
+ STK11          STK11_mut      SREBF1    expr     22    76  6.467063 6.007497                 0.459566
+ KEAP1  KEAP1_high_impact     SMARCA2     dep     11    87  0.557958 0.123788                 0.434170
+NFE2L2         NFE2L2_mut      NFE2L2     dep      6    92  0.814697 0.420321                 0.394376
+  EGFR           EGFR_mut     SMARCA2    expr     13    85  4.442497 4.055039                 0.387458
+NFE2L2         NFE2L2_mut      MBTPS1    expr      6    92  5.994654 5.621537                 0.373117
+ KEAP1  KEAP1_high_impact        SCAP     dep     11    87  1.424305 1.066995                 0.357310
+  KRAS           KRAS_mut       CFLAR    expr     36    62  5.576580 5.224965                 0.351614
+  KRAS   KRAS_high_impact       CFLAR    expr     36    62  5.576580 5.224965                 0.351614
+NFE2L2 NFE2L2_high_impact         PGD    expr      4    94  7.490159 7.139644                 0.350516
+ KEAP1          KEAP1_mut        UXS1     dep     27    71  0.739625 0.393045                 0.346580
+NFE2L2 NFE2L2_high_impact      MBTPS1    expr      4    94  5.975985 5.630558                 0.345427
+NFE2L2 NFE2L2_high_impact     SMARCA2    expr      4    94  4.422528 4.094237                 0.328291
+  EGFR           EGFR_mut      UBIAD1     dep     13    85  0.971702 0.646309                 0.325392
+  TP53   TP53_high_impact         PGD    expr     80    18  7.214800 6.896034                 0.318766
+ STK11  STK11_high_impact       CFLAR      cn     22    76  1.348711 1.047109                 0.301603
+ STK11          STK11_mut       CFLAR      cn     22    76  1.348711 1.047109                 0.301603
+NFE2L2 NFE2L2_high_impact        SCAP     dep      4    94  1.393869 1.094898                 0.298971
+  EGFR           EGFR_mut         PGD     dep     13    85  1.270250 0.972581                 0.297669
+  TP53           TP53_mut         PGD     dep     82    16  1.060025 0.766287                 0.293738
+NFE2L2         NFE2L2_mut      MBTPS2    expr      6    92  4.088191 3.798967                 0.289224
+  TP53           TP53_mut      MBTPS1    expr     82    16  5.693140 5.407918                 0.285222
+NFE2L2 NFE2L2_high_impact       TRPM7      cn      4    94  1.323949 1.045661                 0.278287
+  EGFR           EGFR_mut        UXS1    expr     13    85  5.719512 5.447509                 0.272002
+ KEAP1  KEAP1_high_impact         PGD     dep     11    87  1.251867 0.981748                 0.270118
+NFE2L2 NFE2L2_high_impact        KRAS    expr      4    94  4.381312 4.112821                 0.268491
+NFE2L2 NFE2L2_high_impact         SCD    expr      4    94  7.202888 6.939626                 0.263261
+ KEAP1          KEAP1_mut      UBIAD1     dep     27    71  0.877335 0.618033                 0.259302
+NFE2L2         NFE2L2_mut      PTDSS1      cn      6    92  1.444646 1.198832                 0.245815
+  EGFR           EGFR_mut        UXS1     dep     13    85  0.701266 0.455996                 0.245271
+NFE2L2 NFE2L2_high_impact       TRPM7    expr      4    94  4.215903 3.974213                 0.241690
+  EGFR           EGFR_mut      SREBF1    expr     13    85  6.311809 6.071342                 0.240467
+NFE2L2 NFE2L2_high_impact         SCD     dep      4    94  1.118823 0.882486                 0.236337
+ KEAP1          KEAP1_mut     SMARCA2     dep     27    71  0.343122 0.107645                 0.235477
+  TP53   TP53_high_impact      MBTPS1    expr     80    18  5.689312 5.455984                 0.233327
+ KEAP1          KEAP1_mut       CFLAR      cn     27    71  1.282096 1.051202                 0.230894
+  KRAS   KRAS_high_impact       CFLAR     dep     36    62  0.928791 0.697924                 0.230867
+  KRAS           KRAS_mut       CFLAR     dep     36    62  0.928791 0.697924                 0.230867
+NFE2L2         NFE2L2_mut       TRPM7    expr      6    92  4.198197 3.969975                 0.228222
+ KEAP1          KEAP1_mut         PGD     dep     27    71  1.174723 0.950213                 0.224511
+  TP53   TP53_high_impact         PGD     dep     80    18  1.052961 0.830320                 0.222641
+  EGFR           EGFR_mut      MBTPS2    expr     13    85  3.994916 3.789065                 0.205851
+ KEAP1  KEAP1_high_impact      MBTPS1     dep     11    87  0.824516 0.619014                 0.205503

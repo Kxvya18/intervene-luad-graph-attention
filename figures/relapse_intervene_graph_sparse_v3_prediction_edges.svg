@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="550.0" y="42.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#202020">GraphSparse V3 strengthens both relapse prediction and attention-edge separation</text>
+<text x="550.0" y="70.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#202020">GSE31210 NSCLC, five-fold out-of-fold risk prediction across five seeds</text>
+<text x="305.0" y="115.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#202020">Relapse prediction</text>
+<line x1="90" y1="465.0" x2="520" y2="465.0" stroke="#e8e8e8"/>
+<text x="80.0" y="469.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.62</text>
+<line x1="90" y1="382.5" x2="520" y2="382.5" stroke="#e8e8e8"/>
+<text x="80.0" y="386.5" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.64</text>
+<line x1="90" y1="300.0" x2="520" y2="300.0" stroke="#e8e8e8"/>
+<text x="80.0" y="304.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.66</text>
+<line x1="90" y1="217.5" x2="520" y2="217.5" stroke="#e8e8e8"/>
+<text x="80.0" y="221.5" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.68</text>
+<line x1="90" y1="135.0" x2="520" y2="135.0" stroke="#e8e8e8"/>
+<text x="80.0" y="139.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.70</text>
+<line x1="90" y1="135" x2="90" y2="465" stroke="#222" stroke-width="1.2"/>
+<line x1="90" y1="465" x2="520" y2="465" stroke="#222" stroke-width="1.2"/>
+<rect x="115.8" y="281.1" width="55.9" height="183.9" fill="#4C6A92" opacity="0.9"/>
+<text x="143.8" y="273.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.665</text>
+<text x="143.8" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">Raw</text>
+<text x="143.8" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">transfer</text>
+<rect x="223.3" y="212.5" width="55.9" height="252.5" fill="#7C4D8B" opacity="0.9"/>
+<text x="251.2" y="204.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.681</text>
+<text x="251.2" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3 soft</text>
+<rect x="330.8" y="220.8" width="55.9" height="244.2" fill="#5E8C61" opacity="0.9"/>
+<text x="358.8" y="212.8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.679</text>
+<text x="358.8" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3</text>
+<text x="358.8" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">balanced</text>
+<rect x="438.3" y="239.6" width="55.9" height="225.4" fill="#B65F5F" opacity="0.9"/>
+<text x="466.2" y="231.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.675</text>
+<text x="466.2" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3 strong</text>
+<text x="466.2" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">edges</text>
+<text x="820.0" y="115.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#202020">Biology-edge separation</text>
+<line x1="625" y1="465.0" x2="1015" y2="465.0" stroke="#e8e8e8"/>
+<text x="615.0" y="469.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.00</text>
+<line x1="625" y1="382.5" x2="1015" y2="382.5" stroke="#e8e8e8"/>
+<text x="615.0" y="386.5" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.08</text>
+<line x1="625" y1="300.0" x2="1015" y2="300.0" stroke="#e8e8e8"/>
+<text x="615.0" y="304.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.16</text>
+<line x1="625" y1="217.5" x2="1015" y2="217.5" stroke="#e8e8e8"/>
+<text x="615.0" y="221.5" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.24</text>
+<line x1="625" y1="135.0" x2="1015" y2="135.0" stroke="#e8e8e8"/>
+<text x="615.0" y="139.0" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202020">0.32</text>
+<line x1="625" y1="135" x2="625" y2="465" stroke="#222" stroke-width="1.2"/>
+<line x1="625" y1="465" x2="1015" y2="465" stroke="#222" stroke-width="1.2"/>
+<rect x="648.4" y="465.0" width="50.7" height="0.0" fill="#4C6A92" opacity="0.9"/>
+<text x="673.8" y="457.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.000</text>
+<text x="673.8" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">Raw</text>
+<text x="673.8" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">transfer</text>
+<rect x="745.9" y="164.7" width="50.7" height="300.3" fill="#7C4D8B" opacity="0.9"/>
+<text x="771.2" y="156.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.291</text>
+<text x="771.2" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3 soft</text>
+<rect x="843.4" y="158.6" width="50.7" height="306.4" fill="#5E8C61" opacity="0.9"/>
+<text x="868.8" y="150.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.297</text>
+<text x="868.8" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3</text>
+<text x="868.8" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">balanced</text>
+<rect x="940.9" y="156.9" width="50.7" height="308.1" fill="#B65F5F" opacity="0.9"/>
+<text x="966.2" y="148.9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">0.299</text>
+<text x="966.2" y="490.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">V3 strong</text>
+<text x="966.2" y="505.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#202020">edges</text>
+<rect x="95" y="540" width="910" height="42" rx="6" fill="#f5f3f7" stroke="#ddd4e5"/>
+<text x="550.0" y="566.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#202020">V3 turns the earlier near-uniform attention into a sparse edge map while keeping C-index above V2.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="560" viewBox="0 0 1260 560">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#171717"/>
+  </marker>
+</defs>
+<rect width="1260" height="560" fill="white"/>
+<text x="45.0" y="40.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#171717" text-anchor="start">INTERVENE analysis pipeline</text>
+<text x="45.0" y="66.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#555555" text-anchor="start">Apparatus-style scientific diagram with data flow, dimensions, and validation checkpoints</text>
+<rect x="95.0" y="185.0" width="88.0" height="130.0" rx="8.0" fill="#e8f1fb" stroke="#2b6ca3" stroke-width="1.8"/>
+<text x="139.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">DepMap</text>
+<text x="139.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">CRISPR</text>
+<rect x="230.0" y="185.0" width="88.0" height="130.0" rx="8.0" fill="#e8f1fb" stroke="#2b6ca3" stroke-width="1.8"/>
+<text x="274.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Expression</text>
+<rect x="355.0" y="185.0" width="88.0" height="130.0" rx="8.0" fill="#e8f1fb" stroke="#2b6ca3" stroke-width="1.8"/>
+<text x="399.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Copy</text>
+<text x="399.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">number</text>
+<rect x="480.0" y="185.0" width="88.0" height="130.0" rx="8.0" fill="#e8f1fb" stroke="#2b6ca3" stroke-width="1.8"/>
+<text x="524.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Mutation</text>
+<rect x="1040.0" y="185.0" width="88.0" height="130.0" rx="8.0" fill="#eaf5ec" stroke="#3b8d4f" stroke-width="1.8"/>
+<text x="1084.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">PRISM</text>
+<line x1="185.0" y1="250.0" x2="560.0" y2="250.0" stroke="#171717" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="318.0" y1="162.0" x2="318.0" y2="235.0" stroke="#171717" stroke-width="1.2" stroke-dasharray="4,4"/>
+<text x="235.0" y="145.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="start">multi-omics feature assembly</text>
+<rect x="575.0" y="170.0" width="150.0" height="160.0" rx="10.0" fill="#f8fbff" stroke="#607d9d" stroke-width="2"/>
+<text x="650.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#171717" text-anchor="middle">Module token</text>
+<text x="650.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#171717" text-anchor="middle">matrix X</text>
+<text x="650.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#555555" text-anchor="middle">cell lines ×</text>
+<text x="650.0" y="290.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#555555" text-anchor="middle">modules × features</text>
+<line x1="725.0" y1="250.0" x2="790.0" y2="250.0" stroke="#171717" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="805.0" y="170.0" width="165.0" height="160.0" rx="10.0" fill="#fff7ed" stroke="#d9832e" stroke-width="2"/>
+<text x="887.0" y="206.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#171717" text-anchor="middle">INTERVENE</text>
+<text x="887.0" y="230.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">IHA-style</text>
+<text x="887.0" y="254.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">pseudo-head</text>
+<text x="887.0" y="278.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">mixing</text>
+<circle cx="840.0" cy="308.0" r="6.0" fill="#2b6ca3" stroke="#2b6ca3" stroke-width="1.2"/>
+<circle cx="840.0" cy="290.0" r="6.0" fill="#1b8b87" stroke="#1b8b87" stroke-width="1.2"/>
+<circle cx="840.0" cy="272.0" r="6.0" fill="#d9832e" stroke="#d9832e" stroke-width="1.2"/>
+<circle cx="840.0" cy="254.0" r="6.0" fill="#7357a6" stroke="#7357a6" stroke-width="1.2"/>
+<circle cx="930.0" cy="280.0" r="12.0" fill="#3b8d4f" stroke="#3b8d4f" stroke-width="1.2"/>
+<line x1="848.0" y1="308.0" x2="918.0" y2="280.0" stroke="#2b6ca3" stroke-width="1.2"/>
+<line x1="848.0" y1="290.0" x2="918.0" y2="280.0" stroke="#1b8b87" stroke-width="1.2"/>
+<line x1="848.0" y1="272.0" x2="918.0" y2="280.0" stroke="#d9832e" stroke-width="1.2"/>
+<line x1="970.0" y1="250.0" x2="1035.0" y2="250.0" stroke="#171717" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="533.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#555555" text-anchor="start">paper-facing tokens: SREBP/lipid, mitochondrial translation, oxidative stress, proteostasis, apoptosis/IAP, AKT/mTOR</text>
+<line x1="1085.0" y1="320.0" x2="1085.0" y2="395.0" stroke="#3b8d4f" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="955.0" y="405.0" width="260.0" height="80.0" rx="8.0" fill="#ffffff" stroke="#3b8d4f" stroke-width="1.6"/>
+<text x="985.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="start">Stress-survival validation</text>
+<text x="985.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#555555" text-anchor="start">direct lipid and cytotoxic controls</text>
+<line x1="887.0" y1="330.0" x2="887.0" y2="405.0" stroke="#d9832e" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="760.0" y="405.0" width="250.0" height="80.0" rx="8.0" fill="#ffffff" stroke="#d9832e" stroke-width="1.6"/>
+<text x="790.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="start">Vulnerability state score</text>
+<text x="790.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#555555" text-anchor="start">physics-guided reconstruction</text>
+</svg>

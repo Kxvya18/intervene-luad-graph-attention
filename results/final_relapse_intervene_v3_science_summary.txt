@@ -1,0 +1,78 @@
+Final Relapse-INTERVENE V3 science tables
+========================================
+
+Main AI ablation table
+----------------------
+                        display_model                 source_model                     category seeds  c_index_mean  c_index_sd  hazard_ratio_mean  logrank_p_median  risk_prior_corr_mean  edge_separation_mean  high_events_mean  low_events_mean  delta_c_index_vs_normal_attention  rank_by_c_index
+        GraphSparse INTERVENE V3 soft         graph_sparse_v3_soft       sparse graph attention     5      0.681206    0.022005           4.460319          0.000030              0.633191              0.291179              31.8              9.4                           0.014124                1
+    GraphSparse INTERVENE V3 balanced     graph_sparse_v3_balanced       sparse graph attention     5      0.679211    0.014630           4.509155          0.000024              0.617092              0.297078              31.4              9.2                           0.012129                2
+             INTERVENE V2 constrained module_intervene_constrained IHA-inspired + biology prior     5      0.676989    0.015365           4.298998          0.000037              0.639574                   NaN              30.8              9.2                           0.009907                3
+                     Normal attention         normal_attention_mha                  AI baseline     5      0.667082    0.020202           3.954180          0.000025              0.579630                   NaN              30.4              9.6                           0.000000                4
+Raw transferred stress-survival state   raw_thermodynamic_transfer           biology prior only    na      0.664589    0.000000           3.729564          0.000108              1.000000                   NaN              29.0             10.0                          -0.002494                5
+      Clinical-only Cox-like baseline            clinical_only_cox            clinical baseline     2      0.547212    0.093859           1.640948          0.276496              0.077899                   NaN              21.5             16.5                          -0.119871                6
+
+Top genes higher in V3 high-risk patients
+-----------------------------------------
+          module   gene  high_mean_expression  low_mean_expression  high_minus_low  effect_size_z  perm_p_two_sided
+    proteostasis  PSMA1           8644.563544          6482.283265     2162.280279       1.360539            0.0005
+mito_translation MRPL21            209.786053           144.677103       65.108949       1.124996            0.0005
+    proteostasis  PSMB5           4329.311809          2761.102029     1568.209779       1.113445            0.0005
+mito_translation MRPL49           2936.736853          2139.961706      796.775147       1.055725            0.0005
+mito_translation MRPS23           1056.725748           746.925592      309.800156       0.960830            0.0005
+mito_translation MRPS14           1748.149935          1421.371117      326.778818       0.923997            0.0005
+ akt_mtor_growth PIK3CB           1658.502016          1221.727344      436.774673       0.923994            0.0005
+ akt_mtor_growth   AKT1            682.285016           506.045337      176.239679       0.878553            0.0005
+     srebp_lipid MBTPS1           1229.484160           981.469215      248.014946       0.877052            0.0005
+mito_translation MRPL10           1657.351428          1332.649440      324.701988       0.844478            0.0005
+mito_translation MRPS11            368.781134           282.863580       85.917554       0.833494            0.0005
+oxidative_stress TXNRD1           3015.723229          1778.153037     1237.570193       0.826510            0.0005
+mito_translation MRPS34            536.328726           402.739312      133.589415       0.826358            0.0005
+mito_translation MRPL38            189.875217           153.526949       36.348267       0.817727            0.0005
+    proteostasis    VCP           2465.749868          2034.694015      431.055853       0.801040            0.0005
+     srebp_lipid    SCD            496.114449           282.222400      213.892049       0.742904            0.0005
+   apoptosis_iap  CASP8            171.555188           136.532057       35.023131       0.700319            0.0005
+    proteostasis    HGS            547.724767           468.660779       79.063989       0.655651            0.0005
+mito_translation MRPS21           3990.219235          3318.192618      672.026618       0.617639            0.0005
+oxidative_stress   GCLC           1669.434759           939.444326      729.990432       0.596002            0.0005
+
+Driver alteration enrichment: high vs low V3 risk
+-------------------------------------------------
+           metadata_field        category  high_count  high_total  low_count  low_total  high_fraction  low_fraction  high_minus_low_fraction  fisher_p_two_sided
+   gene_alteration_status KRAS mutation +          10          68          0         68       0.147059      0.000000                 0.147059            0.001368
+pathological_stage_binary               I          44          68         60         68       0.647059      0.882353                -0.235294            0.002109
+pathological_stage_binary              II          24          68          8         68       0.352941      0.117647                 0.235294            0.002109
+   gene_alteration_status EGFR mutation +          33          68         47         68       0.485294      0.691176                -0.205882            0.023115
+           smoking_status    Never-smoker          27          68         41         68       0.397059      0.602941                -0.205882            0.025423
+           smoking_status     Ever-smoker          41          68         27         68       0.602941      0.397059                 0.205882            0.025423
+   gene_alteration_status    ALK-fusion +           4          68          1         68       0.058824      0.014706                 0.044118            0.365636
+   gene_alteration_status EGFR/KRAS/ALK -          21          68         20         68       0.308824      0.294118                 0.014706            1.000000
+
+Module-removal importance
+-------------------------
+  module_removed  mean_c_index_drop_after_removal  sd_c_index_drop_after_removal  mean_risk_drop_when_removed  mean_c_index_after_removal
+    proteostasis                         0.041986                       0.013104                     0.019822                    0.639220
+oxidative_stress                         0.034822                       0.006717                    -0.008763                    0.646384
+ akt_mtor_growth                         0.030379                       0.018296                    -0.011796                    0.650827
+   apoptosis_iap                         0.021174                       0.011892                    -0.016302                    0.660032
+mito_translation                         0.002766                       0.015516                    -0.005909                    0.678440
+     srebp_lipid                        -0.018068                       0.011186                    -0.004869                    0.699275
+
+Combination hypotheses
+----------------------
+                       priority_edge  mean_attention  seeds_observed         source_candidate_genes         target_candidate_genes  source_module_removal_c_index_drop  target_module_removal_c_index_drop                                                                                                                                            combination_hypothesis                                 claim_strength
+    proteostasis -> oxidative_stress        0.338941               5         PSMA1, PSMB5, VCP, HGS   TXNRD1, GCLC, SLC7A11, KEAP1                            0.041986                            0.034822                                 proteasome, deubiquitinase, ER-stress, or protein-homeostasis perturbation + oxidative-stress / NRF2-redox buffering perturbation hypothesis only; needs experimental validation
+   apoptosis_iap -> oxidative_stress        0.338753               5    CASP8, BIRC2, BCL2L1, BIRC3   TXNRD1, GCLC, SLC7A11, KEAP1                            0.021174                            0.034822                                                  IAP/anti-apoptotic survival blockade or apoptosis priming + oxidative-stress / NRF2-redox buffering perturbation hypothesis only; needs experimental validation
+ akt_mtor_growth -> mito_translation        0.329049               5       PIK3CB, AKT1, PTEN, MTOR MRPL21, MRPL49, MRPS23, MRPS14                            0.030379                            0.002766                                                          AKT/mTOR growth-stress adaptation inhibitors + mitochondrial translation / OXPHOS or complex-I stressors hypothesis only; needs experimental validation
+      akt_mtor_growth -> srebp_lipid        0.328537               5       PIK3CB, AKT1, PTEN, MTOR      MBTPS1, SCD, MBTPS2, SCAP                            0.030379                           -0.018068              AKT/mTOR growth-stress adaptation inhibitors + SREBP/lipid-axis modulation; use as stress-state marker because direct lipid drugs were weak in PRISM hypothesis only; needs experimental validation
+     srebp_lipid -> mito_translation        0.325099               5      MBTPS1, SCD, MBTPS2, SCAP MRPL21, MRPL49, MRPS23, MRPS14                           -0.018068                            0.002766 SREBP/lipid-axis modulation; use as stress-state marker because direct lipid drugs were weak in PRISM + mitochondrial translation / OXPHOS or complex-I stressors hypothesis only; needs experimental validation
+       apoptosis_iap -> proteostasis        0.319118               5    CASP8, BIRC2, BCL2L1, BIRC3         PSMA1, PSMB5, VCP, HGS                            0.021174                            0.041986                            IAP/anti-apoptotic survival blockade or apoptosis priming + proteasome, deubiquitinase, ER-stress, or protein-homeostasis perturbation hypothesis only; needs experimental validation
+       proteostasis -> apoptosis_iap        0.309941               5         PSMA1, PSMB5, VCP, HGS    CASP8, BIRC2, BCL2L1, BIRC3                            0.041986                            0.021174                            proteasome, deubiquitinase, ER-stress, or protein-homeostasis perturbation + IAP/anti-apoptotic survival blockade or apoptosis priming hypothesis only; needs experimental validation
+      srebp_lipid -> akt_mtor_growth        0.309258               5      MBTPS1, SCD, MBTPS2, SCAP       PIK3CB, AKT1, PTEN, MTOR                           -0.018068                            0.030379              SREBP/lipid-axis modulation; use as stress-state marker because direct lipid drugs were weak in PRISM + AKT/mTOR growth-stress adaptation inhibitors hypothesis only; needs experimental validation
+oxidative_stress -> mito_translation        0.252845               5   TXNRD1, GCLC, SLC7A11, KEAP1 MRPL21, MRPL49, MRPS23, MRPS14                            0.034822                            0.002766                                                  oxidative-stress / NRF2-redox buffering perturbation + mitochondrial translation / OXPHOS or complex-I stressors hypothesis only; needs experimental validation
+     mito_translation -> srebp_lipid        0.246454               5 MRPL21, MRPL49, MRPS23, MRPS14      MBTPS1, SCD, MBTPS2, SCAP                            0.002766                           -0.018068 mitochondrial translation / OXPHOS or complex-I stressors + SREBP/lipid-axis modulation; use as stress-state marker because direct lipid drugs were weak in PRISM hypothesis only; needs experimental validation
+    oxidative_stress -> proteostasis        0.245751               5   TXNRD1, GCLC, SLC7A11, KEAP1         PSMA1, PSMB5, VCP, HGS                            0.034822                            0.041986                                 oxidative-stress / NRF2-redox buffering perturbation + proteasome, deubiquitinase, ER-stress, or protein-homeostasis perturbation hypothesis only; needs experimental validation
+ mito_translation -> akt_mtor_growth        0.244362               5 MRPL21, MRPL49, MRPS23, MRPS14       PIK3CB, AKT1, PTEN, MTOR                            0.002766                            0.030379                                                          mitochondrial translation / OXPHOS or complex-I stressors + AKT/mTOR growth-stress adaptation inhibitors hypothesis only; needs experimental validation
+
+Careful interpretation
+----------------------
+GraphSparse V3 should be described as a relapse-associated stress-survival hypothesis generator. The gene, driver, and therapy tables are not proof of treatment response; they define testable hypotheses connecting sparse module edges to NSCLC relapse risk.

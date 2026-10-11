@@ -1,0 +1,7 @@
+priority,lead,paper_role,evidence
+1,SREBP/mitochondrial/oxidative stress-survival state,main discovery lead,IBPA-v2 state enriches cytotoxic-residual stress-survival and KEAP1/NFE2L2 oxidative context.
+2,mitochondrial translation stress adaptation,mechanistic axis,Top attention edges converge on mito_translation; mito thermo/dependency features rank high.
+3,proteostasis/deubiquitinase to mitochondrial stress link,secondary mechanism,Proteostasis -> mito_translation is a top IBPA-v2 attention edge.
+4,apoptosis/IAP survival to mitochondrial stress link,secondary mechanism,Apoptosis/IAP -> mito_translation is a top IBPA-v2 attention edge.
+5,direct lipid drug response,secondary/negative result,Direct lipid sensitivity is weaker and not significant after high/low IBPA-v2 split.
+6,generic cytotoxic response,excluded confounder/control,Generic cytotoxic sensitivity is not higher in high IBPA-v2 state.

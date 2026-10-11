@@ -1,0 +1,25 @@
+model,edge,is_biology_edge,top10_seed_count
+graph_sparse_v3_balanced,akt_mtor_growth -> mito_translation,True,5
+graph_sparse_v3_balanced,akt_mtor_growth -> srebp_lipid,True,5
+graph_sparse_v3_balanced,apoptosis_iap -> apoptosis_iap,True,5
+graph_sparse_v3_balanced,apoptosis_iap -> oxidative_stress,True,5
+graph_sparse_v3_balanced,apoptosis_iap -> proteostasis,True,5
+graph_sparse_v3_balanced,proteostasis -> oxidative_stress,True,5
+graph_sparse_v3_balanced,srebp_lipid -> mito_translation,True,5
+graph_sparse_v3_balanced,srebp_lipid -> srebp_lipid,True,5
+graph_sparse_v3_balanced,proteostasis -> proteostasis,True,4
+graph_sparse_v3_balanced,akt_mtor_growth -> akt_mtor_growth,True,3
+graph_sparse_v3_balanced,proteostasis -> apoptosis_iap,True,2
+graph_sparse_v3_balanced,srebp_lipid -> akt_mtor_growth,True,1
+graph_sparse_v3_soft,akt_mtor_growth -> mito_translation,True,5
+graph_sparse_v3_soft,akt_mtor_growth -> srebp_lipid,True,5
+graph_sparse_v3_soft,apoptosis_iap -> oxidative_stress,True,5
+graph_sparse_v3_soft,proteostasis -> oxidative_stress,True,5
+graph_sparse_v3_soft,proteostasis -> proteostasis,True,5
+graph_sparse_v3_soft,srebp_lipid -> mito_translation,True,5
+graph_sparse_v3_soft,srebp_lipid -> srebp_lipid,True,5
+graph_sparse_v3_soft,apoptosis_iap -> apoptosis_iap,True,4
+graph_sparse_v3_soft,apoptosis_iap -> proteostasis,True,4
+graph_sparse_v3_soft,akt_mtor_growth -> akt_mtor_growth,True,3
+graph_sparse_v3_soft,proteostasis -> apoptosis_iap,True,2
+graph_sparse_v3_soft,mito_translation -> mito_translation,True,1

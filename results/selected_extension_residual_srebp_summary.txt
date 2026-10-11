@@ -1,0 +1,73 @@
+Selected extension: thermodynamic residual vulnerability
+=======================================================
+
+Active extension
+----------------
+Score genes whose NSCLC dependency is stronger than expected after correcting for graph topology and pan-cancer generic essentiality.
+
+Residual model
+--------------
+dependency_strength ~ log(degree + 1) + log(weighted_degree + 1) + pan_cancer_dependency
+intercept: 0.012192
+log_degree: 0.021893
+log_weighted_degree: -0.036428
+pan_cancer_dependency: 0.994353
+
+Top selected residual vulnerability genes
+-----------------------------------------
+gene_symbol  entrez_id  degree  weighted_degree  dependency_strength  pan_cancer_dependency  nsclc_selectivity  selected_residual_vulnerability_score
+       KRAS       3845       1         0.490548             0.775387               0.557241           0.237940                              13.390666
+     NFE2L2       4780       7         2.828060             0.444466               0.235624           0.227793                              12.458793
+     UBIAD1      29914       6         2.292621             0.689474               0.501515           0.205014                              11.056659
+    SMARCA2       6595       2         0.734123             0.172522               0.021396           0.164839                              10.530144
+       UXS1      80146      12         4.794275             0.488532               0.299672           0.205997                              10.506835
+      CDCA5     113130       1         0.426379             1.052151               0.887064           0.180067                              10.021020
+      DDX3X       1654       4         1.731762             1.039123               0.870381           0.184054                               9.766815
+       TYMS       7298       5         2.220071             0.859786               0.697054           0.177499                               9.594347
+      PSMB5       5693       6         2.511136             1.891270               1.703221           0.205112                               9.067567
+      TOP2A       7153       0         0.000000             2.433853               2.248735           0.201916                               9.029201
+     ATP1A1        476       7         2.774700             1.197338               1.028870           0.183755                               9.002925
+      TRPM7      54822      14         6.506360             0.903411               0.724048           0.195638                               8.940162
+        PGD       5226       7         2.884246             1.012068               0.865234           0.160158                               8.148242
+     PCYT1A       5130       3         1.144192             0.947432               0.815443           0.143966                               8.044209
+      CFLAR       8837       2         0.730076             0.782733               0.660346           0.133492                               7.946911
+      UBE2H       7328       2         1.353674             0.571256               0.462884           0.118205                               7.712237
+       UBR4      23352       4         1.773941             1.212137               1.079656           0.144502                               7.517053
+     ANAPC2      29882       1         0.369659             1.291607               1.168567           0.134205                               7.312869
+       GMNN      51053       1         0.362674             0.627401               0.526094           0.110500                               7.245013
+     NCAPG2      54892       4         2.125450             1.082706               0.960515           0.133278                               7.224924
+     PTDSS1       9791       2         0.743797             0.327374               0.234872           0.100895                               7.094861
+    ANAPC11      51529       1         0.411763             1.552656               1.428081           0.135880                               6.978132
+      HAUS8      93323       0         0.000000             0.946683               0.846614           0.109149                               6.911601
+       SKA3     221150       2         1.070273             0.964876               0.858335           0.116208                               6.885393
+       DDX5       1655       2         0.777242             0.884813               0.779898           0.114434                               6.844331
+
+Top stress-adaptation modules
+-----------------------------
+module_id  n_genes  mean_dependency  mean_selectivity  mean_degree  mean_residual_score                                                                               top_genes  module_stress_adaptation_score
+     M010        5         0.706502          0.066837     6.800000             2.366908                                                       SCAP, SCD, MBTPS1, SREBF1, MBTPS2                        3.309621
+     M002      105         1.374720          0.014993    12.552381             0.118355 CHEK1, SMU1, SNU13, ATP6V0C, PRPF38A, H2BC15, VPS28, AQR, ATP6V1A, H2AC15, SF3B5, THOC2                        2.226877
+     M011        5         1.335714          0.005351     9.800000            -0.042611                                                       RPL5, ACTR10, DDX59, DCTN3, DCTN4                        1.935538
+     M007        6         0.622381          0.051032     7.666667             1.635120                                                  ITGAV, CRKL, FERMT2, ITGB5, PTK2, RHOA                        1.864916
+     M006        7         1.147698          0.001297     7.285714            -0.035972                                  SYS1, TRAPPC3, SDE2, TRAPPC1, ARFRP1, TRAPPC4, TRAPPC5                        1.308395
+     M009        5         0.773723          0.020057     7.200000             0.596376                                                        PTPN23, USP8, UBAP1, HGS, STAMBP                        0.831294
+     M014        4         0.924818          0.005022     6.000000             0.112224                                                               MED17, MED8, BUD13, MED29                        0.752685
+     M016        4         0.898266         -0.000060     3.750000             0.096970                                                               CHMP2A, ADAR, XRN1, USP18                        0.706553
+     M013        4         1.034265          0.006509    12.500000            -0.236718                                                               NOL7, TEX10, DDX21, RIOK1                        0.337335
+     M003       21         1.110996         -0.008147    10.571429            -0.596341         PFDN6, GPN2, DDX20, SUPT6H, PDRG1, ABCB7, LYRM4, UXT, DNAAF10, URI1, TTC1, RFC4                        0.137005
+     M017        4         0.923950         -0.005048     8.000000            -0.352168                                                                MED20, MED1, MED18, MED9                       -0.092297
+     M015        4         1.319747         -0.032908     9.250000            -1.354161                                                          SNAPC1, SNAPC3, SNAPC5, SNAPC2                       -0.186247
+     M012        4         0.692384         -0.000707     6.250000            -0.078985                                                           MAD2L2, RAD51D, RAD51C, XRCC3                       -0.522652
+     M001      295         0.922196         -0.015034    14.064407            -1.018253      FARS2, MRPS6, ADSL, YRDC, MARS2, AIRIM, MRPL21, FARSB, UTP4, MRPL39, PAK1IP1, DKC1                       -1.487973
+     M004       10         1.169632         -0.053918     9.400000            -2.096620                   CDK9, SRP19, PPP1R12A, ERCC3, PPP1CB, TSR2, TOP3A, SMC6, SMC5, NSMCE3                       -1.983649
+     M005        9         0.794973         -0.046033    10.111111            -1.825736                                PDCD11, ELP1, ELP5, ELP6, ELP3, DPH3, KTI12, CTU2, MOCS3                       -3.130912
+     M008        6         0.546403         -0.087258     7.166667            -3.086906                                              SEPHS2, GPX4, SEPSECS, PRKRA, PSTK, EEFSEC                       -6.006489
+
+SREBP/lipid module genes
+------------------------
+module_id gene_symbol  entrez_id  degree  weighted_degree  dependency_strength  pan_cancer_dependency  nsclc_selectivity  thermo_residual_dependency  selected_residual_vulnerability_score
+     M010      SREBF1       6720       6         3.194685             0.419921               0.336412           0.091087                    0.082846                               5.914093
+     M010        SCAP      22937       8         4.458222             1.107101               1.004252           0.112181                    0.110046                               5.472283
+     M010      MBTPS1       8720       5         3.297711             0.642080               0.577459           0.070485                    0.069578                               4.721416
+     M010         SCD       6319      10         4.666965             0.892133               0.815825           0.083232                    0.079415                               4.051600
+     M010      MBTPS2      51360       5         2.822181             0.471273               0.492176          -0.022800                   -0.020699                               0.342948

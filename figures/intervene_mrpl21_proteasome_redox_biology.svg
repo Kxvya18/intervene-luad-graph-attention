@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+<rect width="1100" height="520" fill="white"/>
+<text x="35" y="35" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111" font-weight="bold" text-anchor="start">INTERVENE-refined biological axis</text>
+<text x="35" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#444" font-weight="normal" text-anchor="start">IHA-inspired sparse attention nominates modules; gene refinement reveals MRPL21 + proteasome core.</text>
+<rect x="45" y="105" width="310" height="95" fill="white" stroke="#d95f02" stroke-width="2" rx="4"/>
+<text x="200" y="137" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d95f02" font-weight="bold" text-anchor="middle">Proteasome core burden</text>
+<text x="200" y="154" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d95f02" font-weight="bold" text-anchor="middle">PSMA1 + PSMB5</text>
+<text x="200" y="173" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">protein-stress</text>
+<text x="200" y="188" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">tolerance</text>
+<rect x="45" y="245" width="310" height="95" fill="white" stroke="#1b9e77" stroke-width="2" rx="4"/>
+<text x="200" y="277" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1b9e77" font-weight="bold" text-anchor="middle">MRPL21 / mitochondrial</text>
+<text x="200" y="294" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1b9e77" font-weight="bold" text-anchor="middle">translation</text>
+<text x="200" y="313" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">mitochondrial</text>
+<text x="200" y="328" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">adaptation</text>
+<rect x="45" y="385" width="310" height="95" fill="white" stroke="#7570b3" stroke-width="2" rx="4"/>
+<text x="200" y="417" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7570b3" font-weight="bold" text-anchor="middle">TXNRD1 / redox</text>
+<text x="200" y="434" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7570b3" font-weight="bold" text-anchor="middle">buffering</text>
+<text x="200" y="453" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">oxidative-stress</text>
+<text x="200" y="468" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">buffering</text>
+<rect x="505" y="245" width="310" height="95" fill="white" stroke="#b2182b" stroke-width="2" rx="4"/>
+<text x="660" y="277" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#b2182b" font-weight="bold" text-anchor="middle">Combined stress-adaptation</text>
+<text x="660" y="294" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#b2182b" font-weight="bold" text-anchor="middle">state</text>
+<text x="660" y="313" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">early relapse risk</text>
+<line x1="355" y1="152" x2="505" y2="292" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="355" y1="292" x2="505" y2="292" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="355" y1="432" x2="505" y2="292" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="735" y="65" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111" font-weight="bold" text-anchor="start">GSE31210 relapse burden by combined state</text>
+<line x1="735" y1="410" x2="1045" y2="410" stroke="#333"/>
+<line x1="735" y1="110" x2="735" y2="410" stroke="#333"/>
+<text x="700" y="260.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333" font-weight="normal" text-anchor="middle">Relapse %</text>
+<rect x="760" y="358.52941176470586" width="48" height="51.470588235294116" fill="#bdbdbd"/>
+<text x="784.0" y="350.52941176470586" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222" font-weight="normal" text-anchor="middle">7/77</text>
+<text x="784.0" y="428" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">Low both</text>
+<rect x="836" y="296.7647058823529" width="48" height="113.23529411764707" fill="#80cdc1"/>
+<text x="860.0" y="288.7647058823529" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222" font-weight="normal" text-anchor="middle">5/25</text>
+<text x="860.0" y="428" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">Mito/redox</text>
+<text x="860.0" y="442" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">only</text>
+<rect x="912" y="228.8235294117647" width="48" height="181.1764705882353" fill="#fdb863"/>
+<text x="936.0" y="220.8235294117647" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222" font-weight="normal" text-anchor="middle">8/25</text>
+<text x="936.0" y="428" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">Proteasome</text>
+<text x="936.0" y="442" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">only</text>
+<rect x="988" y="160.00000000000003" width="48" height="249.99999999999997" fill="#b2182b"/>
+<text x="1012.0" y="152.00000000000003" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222" font-weight="normal" text-anchor="middle">34/77</text>
+<text x="1012.0" y="428" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#222" font-weight="normal" text-anchor="middle">High both</text>
+<text x="890.0" y="468" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#444" font-weight="normal" text-anchor="middle">Combined high-both group has the largest relapse burden</text>
+</svg>

@@ -1,0 +1,74 @@
+DepMap initial inventory
+========================
+
+CRISPR screened models: 1178
+Metadata overlap: 1178
+Gene-effect columns including model id: 17917
+
+Top OncotreeLineage counts
+--------------------------
+OncotreeLineage
+Lung                         126
+Lymphoid                      93
+CNS/Brain                     90
+Head and Neck                 77
+Skin                          74
+Esophagus/Stomach             69
+Bowel                         63
+Ovary/Fallopian Tube          59
+Breast                        53
+Pancreas                      47
+Bone                          46
+Soft Tissue                   45
+Peripheral Nervous System     44
+Myeloid                       42
+Biliary Tract                 35
+Kidney                        34
+Bladder/Urinary Tract         34
+Uterus                        34
+Liver                         24
+Pleura                        21
+Cervix                        18
+Eye                           15
+Thyroid                       11
+Prostate                      10
+Testis                         5
+Ampulla of Vater               4
+Vulva/Vagina                   2
+Fibroblast                     1
+Adrenal Gland                  1
+Other                          1
+
+Top OncotreePrimaryDisease counts
+---------------------------------
+OncotreePrimaryDisease
+Non-Small Cell Lung Cancer                         98
+Diffuse Glioma                                     72
+Head and Neck Squamous Cell Carcinoma              72
+Melanoma                                           66
+Colorectal Adenocarcinoma                          63
+Ovarian Epithelial Tumor                           58
+Mature B-Cell Neoplasms                            57
+Invasive Breast Carcinoma                          49
+Pancreatic Adenocarcinoma                          45
+Esophagogastric Adenocarcinoma                     45
+Neuroblastoma                                      39
+Bladder Urothelial Carcinoma                       30
+Renal Cell Carcinoma                               30
+Intraductal Papillary Neoplasm of the Bile Duct    29
+Acute Myeloid Leukemia                             28
+Endometrial Carcinoma                              28
+Ewing Sarcoma                                      27
+Lung Neuroendocrine Tumor                          26
+Esophageal Squamous Cell Carcinoma                 24
+Pleural Mesothelioma                               21
+Hepatocellular Carcinoma                           21
+Osteosarcoma                                       17
+Embryonal Tumor                                    15
+Non-Cancerous                                      14
+Rhabdomyosarcoma                                   13
+Cervical Squamous Cell Carcinoma                   13
+B-Lymphoblastic Leukemia/Lymphoma                  13
+Myeloproliferative Neoplasms                       11
+Mature T and NK Neoplasms                          10
+Liposarcoma                                         8

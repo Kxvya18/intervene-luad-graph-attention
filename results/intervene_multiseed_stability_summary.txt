@@ -1,0 +1,31 @@
+INTERVENE multi-seed pseudo-head stability
+=========================================
+
+Seeds: 7, 17, 29, 43, 61, 83, 101
+Top edges considered per seed: 12
+Prior weight: 0.22
+
+Validation stability across seeds
+---------------------------------
+                                    test  n_seeds  mean_effect  sd_effect  min_effect  max_effect  median_perm_p  significant_seed_count_p_lt_0.05
+cytotoxic-residual stress-survival score        7     0.893160   0.046437    0.853435    1.004702       0.001998                                 7
+       PRISM stress-survival sensitivity        7     0.119647   0.011111    0.109169    0.145709       0.113886                                 1
+     PRISM generic cytotoxic sensitivity        7    -0.111954   0.005544   -0.118131   -0.101878       0.272727                                 0
+          PRISM direct lipid sensitivity        7     0.040313   0.011292    0.024357    0.059762       0.426573                                 0
+          KEAP1/NFE2L2 oxidative context        7     0.842600   0.041005    0.742158    0.859340       0.002997                                 7
+
+Stable biological edges appearing in at least half of seeds
+----------------------------------------------------------
+                             edge  seed_count  seed_fraction  mean_rank  mean_attention  mean_enrichment                seeds   heads pseudoheads
+  apoptosis_iap->mito_translation           7       1.000000   5.166667        0.421182         0.254516 7,17,29,43,61,83,101 0,1,2,3         0,1
+    srebp_lipid->mito_translation           7       1.000000   5.733333        0.403136         0.236469 7,17,29,43,61,83,101 0,1,2,3         0,1
+akt_mtor_growth->mito_translation           7       1.000000   7.071429        0.398547         0.231880 7,17,29,43,61,83,101 0,1,2,3         0,1
+   proteostasis->mito_translation           7       1.000000   5.937500        0.394233         0.227567 7,17,29,43,61,83,101 0,1,2,3         0,1
+  apoptosis_iap->oxidative_stress           5       0.714286   6.000000        0.356967         0.190300        7,17,29,61,83   0,2,3         0,1
+akt_mtor_growth->oxidative_stress           5       0.714286   7.800000        0.345363         0.178696        7,17,29,61,83   0,2,3         0,1
+    srebp_lipid->oxidative_stress           5       0.714286   8.000000        0.336103         0.169436       17,29,43,61,83     2,3         0,1
+   proteostasis->oxidative_stress           4       0.571429   7.800000        0.329594         0.162927          17,29,61,83     2,3         0,1
+
+Paper-facing interpretation
+---------------------------
+The pseudo-head edges are not fully random: several module-module edges recur across seeds. Use only recurrent edges as biological interpretation, and avoid over-interpreting seed-specific edges.

@@ -1,0 +1,101 @@
+MRPL21 / Proteasome INTERVENE AI-Biology Validation
+====================================================
+
+1) External validation of MRPL21 and MRPL21 + proteasome-core
+  cohort                          score   n  events  c_index  hr_high_low    logrank_p    cox_lrt_p  cox_chi2
+GSE30219                         MRPL21 274     114 0.602937     2.508603 3.358297e-04 1.952489e-02  5.453882
+GSE30219          proteasome_core_score 274     114 0.589253     2.099589 3.811949e-03 2.833347e-03  8.911795
+GSE30219        mrpl21_proteasome_score 274     114 0.603652     2.082661 2.741583e-03 2.000588e-03  9.548996
+GSE30219 mrpl21_proteasome_prolif_score 274     114 0.651521     3.891382 7.618986e-07 1.018854e-06 23.892168
+GSE30219   intervene_refined_gene_score 274     114 0.616478     2.898345 5.799125e-05 1.224861e-04 14.754021
+GSE30219       proteostasis_redox_state 274     114 0.540193     1.472411 9.293436e-02 7.381822e-02  3.196009
+GSE30219              stress_core_state 274     114 0.562506     1.573564 9.391376e-02 2.596020e-02  4.958668
+GSE30219    older_broad_intervene_state 274     114 0.557261     1.546531 5.476083e-02 2.686747e-02  4.899307
+GSE30219            proliferation_score 274     114 0.680175     5.507724 1.378947e-08 9.944639e-12 46.339354
+GSE37745                         MRPL21  96      49 0.576019     1.267420 6.296954e-01 1.192631e-01  2.426971
+GSE37745          proteasome_core_score  96      49 0.510021     0.825711 4.085883e-01 8.028021e-01  0.062361
+GSE37745        mrpl21_proteasome_score  96      49 0.564962     1.066139 8.137514e-01 3.075335e-01  1.041239
+GSE37745 mrpl21_proteasome_prolif_score  96      49 0.580857     1.952916 2.107313e-01 2.037329e-01  1.615411
+GSE37745   intervene_refined_gene_score  96      49 0.552868     1.461538 6.123963e-01 3.503038e-01  0.872356
+GSE37745       proteostasis_redox_state  96      49 0.567035     1.480069 3.439589e-01 3.083218e-01  1.037851
+GSE37745              stress_core_state  96      49 0.573255     1.820298 2.308473e-01 9.816191e-02  2.735156
+GSE37745    older_broad_intervene_state  96      49 0.582239     2.287937 4.081347e-02 2.810020e-02  4.821909
+GSE37745            proliferation_score  96      49 0.605390     2.098794 6.102913e-02 2.228139e-01  1.486156
+GSE68465          proteasome_core_score 333     178 0.567327     1.183043 1.013674e-01 1.115071e-01  2.532730
+GSE68465        mrpl21_proteasome_score   0       0      NaN          NaN          NaN          NaN       NaN
+GSE68465 mrpl21_proteasome_prolif_score   0       0      NaN          NaN          NaN          NaN       NaN
+GSE68465   intervene_refined_gene_score   0       0      NaN          NaN          NaN          NaN       NaN
+GSE68465       proteostasis_redox_state 333     178 0.558188     1.125570 2.972339e-01 2.717009e-01  1.208139
+GSE68465              stress_core_state 333     178 0.562460     1.541145 3.156706e-02 9.240285e-02  2.832006
+GSE68465    older_broad_intervene_state 333     178 0.544777     1.360160 2.038647e-01 8.666702e-02  2.935217
+GSE68465            proliferation_score 333     178 0.610227     1.674870 7.759148e-04 2.962873e-02  4.730705
+
+2) Added-value after proliferation in external cohorts
+  cohort                                                   test   n  events  base_c_index  plus_c_index  delta_c_index    lrt_p  lrt_chi2
+GSE30219                       MRPL21_added_after_proliferation 274     114      0.680175      0.681081       0.000906 0.886920  0.020222
+GSE30219        proteasome_core_score_added_after_proliferation 274     114      0.680175      0.679794      -0.000381 0.651373  0.204174
+GSE30219      mrpl21_proteasome_score_added_after_proliferation 274     114      0.680175      0.680366       0.000191 0.729361  0.119699
+GSE30219 intervene_refined_gene_score_added_after_proliferation 274     114      0.680175      0.680175       0.000000 0.920769  0.009893
+GSE37745                       MRPL21_added_after_proliferation  96      49      0.605390      0.598480      -0.006911 0.206492  1.595854
+GSE37745        proteasome_core_score_added_after_proliferation  96      49      0.605390      0.611610       0.006220 0.712921  0.135377
+GSE37745      mrpl21_proteasome_score_added_after_proliferation  96      49      0.605390      0.597443      -0.007947 0.620781  0.244772
+GSE37745 intervene_refined_gene_score_added_after_proliferation  96      49      0.605390      0.598480      -0.006911 0.723943  0.124746
+GSE68465        proteasome_core_score_added_after_proliferation 333     178      0.610227      0.608880      -0.001346 0.553423  0.351221
+GSE68465      mrpl21_proteasome_score_added_after_proliferation   0       0           NaN           NaN            NaN      NaN       NaN
+GSE68465 intervene_refined_gene_score_added_after_proliferation   0       0           NaN           NaN            NaN      NaN       NaN
+
+3) Probe/platform stability summary
+  cohort platform   gene  n_probes  mean_probe_cv  mean_pairwise_probe_corr
+GSE30219   GPL570 MRPL21         1       0.080908                       NaN
+GSE30219   GPL570  PSMA1         3       0.037927                  0.973494
+GSE30219   GPL570  PSMB5         1       0.052905                       NaN
+GSE30219   GPL570 TXNRD1         2       0.071821                  0.235695
+GSE31210   GPL570 MRPL21         1       0.350383                       NaN
+GSE31210   GPL570  PSMA1         3       0.214686                  0.874259
+GSE31210   GPL570  PSMB5         1       0.371566                       NaN
+GSE31210   GPL570 TXNRD1         2       0.626719                  0.053141
+GSE37745   GPL570 MRPL21         1       0.060412                       NaN
+GSE37745   GPL570  PSMA1         3       0.035805                  0.972240
+GSE37745   GPL570  PSMB5         1       0.044938                       NaN
+GSE37745   GPL570 TXNRD1         2       0.074452                  0.152365
+GSE68465    GPL96 MRPL21         0            NaN                       NaN
+GSE68465    GPL96  PSMA1         3       0.272045                  0.831940
+GSE68465    GPL96  PSMB5         1       0.407252                       NaN
+GSE68465    GPL96 TXNRD1         1       0.893781                       NaN
+
+4) AI ablation around MRPL21/proteasome refinement
+                                                  model                               source   n  events  c_index    logrank_p
+               MRPL21 + proteasome-core + proliferation              extracted/refined score 204      54 0.761165 1.097990e-12
+      INTERVENE-refined genes MRPL21+PSMA1+PSMB5+TXNRD1              extracted/refined score 204      54 0.759465 3.464828e-12
+              MRPL21 + proteasome-core manual/extracted              extracted/refined score 204      54 0.755838 2.645194e-12
+                             INTERVENE V3 OOF mean risk              extracted/refined score 204      54 0.700748 5.033558e-07
+MRPL21 + proteasome-core residualized for proliferation              extracted/refined score 204      54 0.699615 7.617445e-07
+                                       raw module score              extracted/refined score 204      54 0.695987 4.749813e-07
+ INTERVENE-refined genes residualized for proliferation              extracted/refined score 204      54 0.691907 3.834042e-06
+                               GraphSparse INTERVENE V3 existing AI model, mean across seeds 204      54 0.681206 1.298545e-06
+                                             normal MHA                 existing AI baseline 204      54 0.667082 1.422686e-05
+                                       raw module prior                 existing AI baseline 204      54 0.664589 1.079635e-04
+                           no-prior IHA-style attention                 existing AI baseline 204      54 0.661823 1.051863e-05
+
+5) Attention-to-biology evidence
+                      attention_edge  top10_seed_count  module_removed_c_index_drop       linked_driver_genes  best_linked_gene_c_index
+ akt_mtor_growth -> mito_translation                 5                     0.030379            MRPL49; MRPL21                  0.733961
+      akt_mtor_growth -> srebp_lipid                 5                     0.030379                                                 NaN
+   apoptosis_iap -> oxidative_stress                 5                     0.021174                    TXNRD1                  0.661868
+    proteostasis -> oxidative_stress                 5                     0.041986 PSMA1; PSMB5; TXNRD1; VCP                  0.692587
+        proteostasis -> proteostasis                 5                     0.041986         PSMA1; PSMB5; VCP                  0.692587
+     srebp_lipid -> mito_translation                 5                    -0.018068            MRPL49; MRPL21                  0.733961
+          srebp_lipid -> srebp_lipid                 5                    -0.018068                                                 NaN
+      apoptosis_iap -> apoptosis_iap                 4                     0.021174                                                 NaN
+       apoptosis_iap -> proteostasis                 4                     0.021174         PSMA1; PSMB5; VCP                  0.692587
+  akt_mtor_growth -> akt_mtor_growth                 3                     0.030379                                                 NaN
+       proteostasis -> apoptosis_iap                 2                     0.041986         PSMA1; PSMB5; VCP                  0.692587
+mito_translation -> mito_translation                 1                     0.002766            MRPL49; MRPL21                  0.733961
+
+Figure: /Users/boolu/Desktop/simulations/ALL_PROJECTS/DepMap/figures/intervene_mrpl21_proteasome_redox_biology.svg
+
+Interpretation:
+- INTERVENE should be framed as the discovery algorithm: sparse module attention -> module removal -> gene extraction -> external falsification.
+- MRPL21 is a strong GSE31210 novelty lead and remains predictive after proliferation adjustment.
+- External validation is the key limiter: if MRPL21 does not transfer consistently, frame it as cohort-specific discovery plus a mechanistic hypothesis, not a universal LUAD biomarker.
+- Probe mapping matters: GSE68465/GPL96 lacks MRPL21 in the mapped score table, so it cannot fairly validate MRPL21 directly with the current platform mapping.

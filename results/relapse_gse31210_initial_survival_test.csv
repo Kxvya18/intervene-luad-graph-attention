@@ -1,0 +1,2 @@
+test,n,events,high_n,low_n,high_events,low_events,hazard_ratio_approx,event_fisher_p,logrank_chi2,logrank_p
+logrank high vs low,136,39,68,68,29,10,3.7295642410881826,0.0005436374786140975,14.992078015135824,0.0001079634569792047

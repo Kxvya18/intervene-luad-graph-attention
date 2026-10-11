@@ -1,0 +1,5 @@
+hypothesis,candidate_classes,reason,paper_status
+SREBP/lipid stress state plus mitochondrial stress,SREBP/lipid module marker + mitochondrial complex I / mitochondrial stress drugs,Top attention edge is SREBP/lipid to mitochondrial translation; stress-survival PRISM signal is stronger than direct lipid response.,"hypothesis, not proven combination therapy"
+SREBP/mitochondrial state plus proteostasis pressure,proteasome/deubiquitinase/HDAC-associated stress-survival compounds,Proteostasis to mitochondrial translation appears as a strong biological attention edge.,"hypothesis, needs external validation"
+stress-survival state plus apoptosis/IAP escape,IAP/apoptosis modulators with mitochondrial-stress context,Apoptosis/IAP to mitochondrial translation appears among top attention edges.,"hypothesis, needs dose-response or perturbation validation"
+direct lipid monotherapy,direct lipid drugs only,Direct lipid PRISM response is weaker and not significant in the INTERVENE high-low split.,secondary/negative result

@@ -1,0 +1,154 @@
+NSCLC mutation context for SREBP/lipid axis
+==========================================
+
+SREBP seed dependency activity by mutation group
+-----------------------------------------------
+marker               flag  n_mut  n_wt  mean_srebp_activity_mut  mean_srebp_activity_wt  difference_mut_minus_wt                    note
+ KEAP1  KEAP1_high_impact     11    87                 0.801657                0.694470                 0.107187                      ok
+NFE2L2 NFE2L2_high_impact      4    94                 0.804259                0.702342                 0.101917                      ok
+NFE2L2         NFE2L2_mut      6    92                 0.699639                0.706949                -0.007310                      ok
+ KEAP1          KEAP1_mut     27    71                 0.697672                0.709859                -0.012187                      ok
+ STK11          STK11_mut     22    76                 0.678954                0.714476                -0.035522                      ok
+ STK11  STK11_high_impact     22    76                 0.678954                0.714476                -0.035522                      ok
+  EGFR           EGFR_mut     13    85                 0.671977                0.711782                -0.039805                      ok
+  TP53           TP53_mut     82    16                 0.696415                0.758197                -0.061782                      ok
+  TP53   TP53_high_impact     80    18                 0.694409                0.760246                -0.065837                      ok
+  KRAS           KRAS_mut     36    62                 0.642301                0.743780                -0.101479                      ok
+  KRAS   KRAS_high_impact     36    62                 0.642301                0.743780                -0.101479                      ok
+  EGFR   EGFR_high_impact      1    97                      NaN                     NaN                      NaN insufficient group size
+
+Top candidate dependency shifts by mutation group
+-------------------------------------------------
+marker               flag candidate_gene  n_mut  n_wt  mean_dependency_mut  mean_dependency_wt  difference_mut_minus_wt
+  KRAS   KRAS_high_impact           KRAS     36    62             1.383004            0.422577                 0.960426
+  KRAS           KRAS_mut           KRAS     36    62             1.383004            0.422577                 0.960426
+NFE2L2 NFE2L2_high_impact         NFE2L2      4    94             1.035931            0.419298                 0.616633
+ KEAP1  KEAP1_high_impact         NFE2L2     11    87             0.919883            0.384356                 0.535527
+ KEAP1          KEAP1_mut         NFE2L2     27    71             0.794376            0.311402                 0.482973
+ KEAP1  KEAP1_high_impact           UXS1     11    87             0.913497            0.434800                 0.478696
+ KEAP1  KEAP1_high_impact        SMARCA2     11    87             0.557958            0.123788                 0.434170
+NFE2L2         NFE2L2_mut         NFE2L2      6    92             0.814697            0.420321                 0.394376
+ KEAP1  KEAP1_high_impact           SCAP     11    87             1.424305            1.066995                 0.357310
+ KEAP1          KEAP1_mut           UXS1     27    71             0.739625            0.393045                 0.346580
+  EGFR           EGFR_mut         UBIAD1     13    85             0.971702            0.646309                 0.325392
+NFE2L2 NFE2L2_high_impact           SCAP      4    94             1.393869            1.094898                 0.298971
+  EGFR           EGFR_mut            PGD     13    85             1.270250            0.972581                 0.297669
+  TP53           TP53_mut            PGD     82    16             1.060025            0.766287                 0.293738
+ KEAP1  KEAP1_high_impact            PGD     11    87             1.251867            0.981748                 0.270118
+ KEAP1          KEAP1_mut         UBIAD1     27    71             0.877335            0.618033                 0.259302
+  EGFR           EGFR_mut           UXS1     13    85             0.701266            0.455996                 0.245271
+NFE2L2 NFE2L2_high_impact            SCD      4    94             1.118823            0.882486                 0.236337
+ KEAP1          KEAP1_mut        SMARCA2     27    71             0.343122            0.107645                 0.235477
+  KRAS   KRAS_high_impact          CFLAR     36    62             0.928791            0.697924                 0.230867
+  KRAS           KRAS_mut          CFLAR     36    62             0.928791            0.697924                 0.230867
+ KEAP1          KEAP1_mut            PGD     27    71             1.174723            0.950213                 0.224511
+  TP53   TP53_high_impact            PGD     80    18             1.052961            0.830320                 0.222641
+ KEAP1  KEAP1_high_impact         MBTPS1     11    87             0.824516            0.619014                 0.205503
+ STK11          STK11_mut        SMARCA2     22    76             0.327591            0.127633                 0.199958
+ STK11  STK11_high_impact        SMARCA2     22    76             0.327591            0.127633                 0.199958
+ KEAP1  KEAP1_high_impact         MBTPS2     11    87             0.648421            0.448875                 0.199546
+ STK11  STK11_high_impact         NFE2L2     22    76             0.597266            0.400235                 0.197030
+ STK11          STK11_mut         NFE2L2     22    76             0.597266            0.400235                 0.197030
+  TP53           TP53_mut          TRPM7     82    16             0.934134            0.745957                 0.188177
+  TP53   TP53_high_impact          TRPM7     80    18             0.933233            0.770871                 0.162361
+NFE2L2         NFE2L2_mut          CFLAR      6    92             0.934457            0.772837                 0.161620
+ STK11          STK11_mut           KRAS     22    76             0.893001            0.741341                 0.151660
+ STK11  STK11_high_impact           KRAS     22    76             0.893001            0.741341                 0.151660
+  KRAS           KRAS_mut          TRPM7     36    62             0.996975            0.849084                 0.147891
+  KRAS   KRAS_high_impact          TRPM7     36    62             0.996975            0.849084                 0.147891
+ STK11  STK11_high_impact         UBIAD1     22    76             0.804044            0.656309                 0.147736
+ STK11          STK11_mut         UBIAD1     22    76             0.804044            0.656309                 0.147736
+NFE2L2 NFE2L2_high_impact          CFLAR      4    94             0.916895            0.777024                 0.139872
+NFE2L2 NFE2L2_high_impact           UXS1      4    94             0.620042            0.482935                 0.137106
+
+Mutation counts and examples
+----------------------------
+HugoSymbol
+TP53      82
+KRAS      36
+KEAP1     27
+STK11     22
+EGFR      13
+NFE2L2     6
+
+   ModelID HugoSymbol      ProteinChange  VariantType                                                 MolecularConsequence VepImpact  OncogeneHighImpact  TumorSuppressorHighImpact  LikelyLoF  Hotspot  HessDriver
+ACH-000012       EGFR     p.E746_A750del     deletion                                          SO:0001822|inframe_deletion  MODERATE               False                      False      False    False       False
+ACH-000029       EGFR     p.E746_A750del     deletion                                          SO:0001822|inframe_deletion  MODERATE               False                      False      False    False       False
+ACH-000030       EGFR     p.E746_A750del     deletion                                          SO:0001822|inframe_deletion  MODERATE               False                      False      False    False       False
+ACH-000035       EGFR     p.E746_A750del     deletion                                          SO:0001822|inframe_deletion  MODERATE               False                      False      False    False       False
+ACH-000176       EGFR p.L747_P753delinsS     deletion                                             SO:0001820|inframe_indel  MODERATE               False                      False      False    False       False
+ACH-000176       EGFR            p.A755D          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000339       EGFR           p.Q1174R          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False    False       False
+ACH-000587       EGFR            p.T790M          SNV SO:0001583|missense_variant,SO:0001619|non-coding_transcript_variant  MODERATE               False                      False      False     True       False
+ACH-000587       EGFR            p.L858R          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000666       EGFR           p.Q1159H          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000718       EGFR            p.V592F          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000860       EGFR            p.C307R substitution                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000869       EGFR           p.D1127N          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000888       EGFR            p.C311F          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000924       EGFR           p.S1130G          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False    False       False
+ACH-000311      KEAP1     p.A170_R204del     deletion                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000378      KEAP1            p.G523W          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000390      KEAP1          p.E258Ter          SNV                                                                  NaN      HIGH               False                       True       True    False       False
+ACH-000414      KEAP1            p.R272L          SNV                                                                  NaN  MODERATE               False                      False       True     True       False
+ACH-000416      KEAP1          p.E444Ter          SNV                                                                  NaN      HIGH               False                       True       True    False       False
+ACH-000434      KEAP1            p.R135L          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000463      KEAP1            p.D236H          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000481      KEAP1          p.R336Ter          SNV                                                                  NaN      HIGH               False                       True       True    False       False
+ACH-000496      KEAP1            p.G462W          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000521      KEAP1            p.V568F          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000666      KEAP1           p.Q75Ter          SNV                                                                  NaN      HIGH               False                       True       True    False       False
+ACH-000667      KEAP1            p.F211C          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000681      KEAP1            p.G333C          SNV                                                                  NaN  MODERATE               False                      False       True     True       False
+ACH-000766      KEAP1            p.G364C          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000781      KEAP1            p.W252C          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000785      KEAP1            p.R272C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False       True     True       False
+ACH-000787      KEAP1            p.G430V          SNV                                                                  NaN  MODERATE               False                      False       True    False       False
+ACH-000837      KEAP1            p.R460S          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000851      KEAP1     p.K551SfsTer44     deletion                                                                  NaN      HIGH               False                       True       True    False       False
+ACH-000853      KEAP1            p.V168I          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000878      KEAP1            p.G364C          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000900      KEAP1            p.Q193H          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000916      KEAP1            p.A143P          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000921      KEAP1            p.R413L          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000921      KEAP1            p.V369L          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-000924      KEAP1            p.G430C          SNV                                                                  NaN  MODERATE               False                      False       True    False       False
+ACH-000929      KEAP1            p.G429C          SNV                                                                  NaN  MODERATE               False                      False      False    False       False
+ACH-003012      KEAP1            p.G333C          SNV                                                                  NaN  MODERATE               False                      False       True     True       False
+ACH-000251       KRAS             p.G12V          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000264       KRAS             p.Q61K substitution                                                                  NaN  MODERATE               False                      False      False     True       False
+ACH-000311       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000339       KRAS             p.G12D          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000378       KRAS             p.G13D          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000414       KRAS             p.G13D          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000438       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000444       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000463       KRAS             p.Q61H          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000496       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000511       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000521       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000596       KRAS             p.G12V          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000638       KRAS             p.G12V          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000662       KRAS             p.G12V          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000666       KRAS             p.G13C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000667       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000672       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000677       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000681       KRAS             p.G12S          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000718       KRAS             p.G12F substitution                                                                  NaN  MODERATE               False                      False      False     True       False
+ACH-000757       KRAS             p.G12D          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000774       KRAS             p.G12V          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000791       KRAS             p.G12A          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000845       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000851       KRAS             p.G13C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000860       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000861       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000872       KRAS             p.G13D          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000886       KRAS             p.G12A          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000900       KRAS             p.G12C          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000916       KRAS             p.G12A          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000921       KRAS             p.G12R          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000945       KRAS             p.Q61L          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000980       KRAS             p.Q61H          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-003012       KRAS             p.G12S          SNV                                          SO:0001583|missense_variant  MODERATE               False                      False      False     True        True
+ACH-000442     NFE2L2             p.D29H          SNV           SO:0001583|missense_variant,SO:0001623|5_prime_UTR_variant  MODERATE               False                      False      False     True        True

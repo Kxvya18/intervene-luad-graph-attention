@@ -77,11 +77,11 @@ Important figure:
 Use the bundled Codex Python runtime:
 
 ```bash
-/Users/boolu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/run_relapse_intervene_graph_sparse_v3.py
-/Users/boolu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/run_final_intervene_robustness_tests.py
-/Users/boolu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/run_gse31210_refined_mechanism_axes.py
-/Users/boolu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/run_mrpl21_intervene_ai_validation.py
-/Users/boolu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/make_tcbb_q1_readiness_package.py
+python3 src/run_relapse_intervene_graph_sparse_v3.py
+python3 src/run_final_intervene_robustness_tests.py
+python3 src/run_gse31210_refined_mechanism_axes.py
+python3 src/run_mrpl21_intervene_ai_validation.py
+python3 src/make_tcbb_q1_readiness_package.py
 ```
 
 ## IHA Relationship
